@@ -1,0 +1,1 @@
+const sharer = "https://facebook.com/CS-Army-Nepal-104067989102721";
