@@ -13,3 +13,15 @@ body{
 .lg-text{
     color: #fff;
 }
+.intro-tb{
+    position: relative;
+    animation: right 1.5s;
+}
+@keyframes right{
+    from{
+        left: 0%;
+    }
+    to{
+        right: 0%;
+    }
+}
