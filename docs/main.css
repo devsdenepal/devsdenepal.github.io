@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:400,500,700");
+
+body{
+    margin:0px;
+    padding : 0px;
+    box-sizing: border-box;
+    font-family: "Google Sans",sans-serif;
+}
+.bg-orange{
+    background-color: rgb(226, 106, 19);
+    color: #fff !important;
+}
+.lg-text{
+    color: #fff;
+}
