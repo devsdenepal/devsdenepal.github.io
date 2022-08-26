@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Google+Sans:400,500,700");
-
+.text-gray{
+    color: #fff !important;
+}
 body{
+    color: rgb(148 163 184) !important;
+    background: rgb(255 255 255/1);
     margin:0px;
     padding : 0px;
     box-sizing: border-box;
@@ -13,9 +17,9 @@ body{
 .lg-text{
     color: #fff;
 }
-.intro-tb{
+.oi0{
     position: relative;
-    animation: right 1.5s;
+    animation: right 1.5s infinite;
 }
 @keyframes right{
     from{
@@ -32,7 +36,7 @@ body{
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
+      typing 3.5s steps(40, end) infinite,
       blink-caret .75s step-end infinite;
   }
   
@@ -46,4 +50,7 @@ body{
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange; }
+  }
+  .mr-5{
+    cursor: pointer;
   }
