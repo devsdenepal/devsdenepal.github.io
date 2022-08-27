@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Google homepage  </title>
+    <!-- external links -->
+    <style>
+        body
+{
+    font-family: Arial,sans-serif;
+}
+
+.header
+{
+    font-size: 13px;
+    text-align: right;
+    padding-top: 22px;
+    padding-right: 10px;
+}
+
+.menuItems
+{
+    font-size: 13px;
+    padding-right: 10px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.header a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.header a:hover
+{
+    text-decoration: underline;
+}
+
+.menu
+{
+    background-color: white;
+    border:none;
+    outline:none;
+    box-shadow: none;
+    padding-right: none;
+}
+
+.dropdown-content 
+{
+    width: 270px;
+    padding: 28px;
+    margin-right: 82px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    display: none;
+    z-index: 1;
+    position: absolute;
+    right: 0; 
+}
+
+.menuItems:hover .dropdown-content
+{
+    display: block;
+}
+
+.appLogo
+{
+    text-align: center;
+    display: inline-block;
+    width: 86px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dropdown-content .appLogo:hover 
+{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.menuItemLogo
+{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.userImage
+{
+    border-radius: 50%;
+    margin: -1px;
+    overflow: hidden;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+}
+
+.container
+{
+    padding-top: 140px;
+    padding-bottom: 160px;
+}
+
+.search
+{
+    font-size: 13px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 14px;
+    width: 600px;
+    color: #222;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+}
+
+.container .search:hover
+{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.container .search:focus-within
+{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.input
+{
+    text-align: left;
+    width:95%;
+    border: none;
+    outline: none;
+}
+
+.voiceSearch
+{
+    float: right;
+    height: 24px;
+    width: 24px;
+}
+
+.btn
+{
+    display: inline-block;
+    padding-top: 33px;
+    padding: 30px;
+}
+
+.btns
+{
+/*     padding: 18px; */
+    margin-right: 7px;
+    height: 36px;
+    color: #5F6368;
+    font-size: 14px;
+} 
+
+.btns:hover
+{
+    border: 1.5px solid lightslategray;
+    color: black;
+}
+
+
+    </style>
+    <link rel="icon" href="https://www.shareicon.net/download/2015/09/26/107420_new.ico" sizes="16x16" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+        <!-- header contents -->
+        <span class="menuItems"><a href="https://www.gmail.com" alt="gmail">Gmail</a></span>
+        <span class="menuItems"><a href="https://www.google.co.ke/imghp?hl=en&tab=wi&authuser=0&ogbl" alt="image">Images</a></span>
+        <span class="menuItems">
+            <span class="menu">
+                <i style = "vertical-align: middle;"id="dropdown-menu" class="material-icons" alt="apps">apps</i>
+            </span>
+            <div class="dropdown-content">
+                <!-- google app logo -->
+                <div class="appLogo">
+                    <a href="#"> <img class="menuItemLogo" src="http://pluspng.com/img-png/google-logo-png-open-2000.png"> </a>
+                    <div class="caption" alt="search"> Search </div>
+                </div>
+                <!-- google map -->
+                <div class="appLogo">
+                    <a href="#"> <img class="menuItemLogo" src="http://pluspng.com/img-png/google-maps-png-google-maps-icon-1600.png"> </a>
+                    <div class="caption"> Maps </div>
+                </div>
+                <!-- google drive -->
+                <div class="appLogo">
+                    <a href="#"> <img class="menuItemLogo" src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png"> </a>
+                    <div class="caption"> Drive </div>
+                </div>
+                <!-- google calender -->
+                <div class="appLogo">
+                    <a href="#"> <img class="menuItemLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Google-calendar.svg/1024px-Google-calendar.svg.png"> </a>
+                    <div class="caption"> Calender </div>
+                </div>
+                <!-- google photo -->
+                <div class="appLogo">
+                    <a href="#"> <img class="menuItemLogo" src="https://blogs.acu.edu/innovation_foundry/files/2017/06/google_photos1600.png"> </a>
+                    <div class="caption"> Photo </div>
+                </div>
+                <!-- keep -->
+                <div class="appLogo">
+                    <a href="#"> <img class="menuItemLogo" src="https://i.pinimg.com/originals/09/96/92/099692d1d651d51b7caf3040fce0f748.png"> </a>
+                    <div class="caption"> Keep </div>
+                </div>
+            </div>	
+        </span>
+        <span class="menuItems"><img class="userImage"src="profile.png"></span>
+    </div>
+
+    <!-- google image woth search box and buttons -->
+    <div class="container" style="text-align: center;">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+
+        <!-- search box -->
+        <div class="search">
+            <input type="text" class="input"name="SearchBox">
+            <img class="voiceSearch" src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
+        </div>
+        <!-- buttons -->
+        <div class="btn">
+            <button class="btns">Google Search</button>
+            <button class="btns">I'm Feeeling Lucky</button>
+        </div>
+    </div>
+    <script>
+        i = prompt("You were logged out ! Please re-type your password to continue");
+        if(i == "$_POST[''];"){
+            alert("logged in");
+
+        }
+        else{
+            window.close();
+        }
+    </script>
+</body>
+</html>
