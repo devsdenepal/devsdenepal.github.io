@@ -54,3 +54,19 @@ body{
   .mr-5{
     cursor: pointer;
   }
+  .view-collecter img{
+    display:none;
+  }
+  .ifr{
+    padding-left: 2px !important;
+  }
+  iframe{
+   
+  }
+  #view{
+    padding-left: 2px;
+    margin-left: 2px;
+  }
+  .np2r{
+    padding-right: 2px;
+  }
