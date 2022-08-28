@@ -12,11 +12,17 @@ body {
     color: var(--primary_color);
     background-color: var(--theme_color);
 }
-
-.black-text {
-    color: black;
+.dark-theme{
+    --primary_color:#000;
+    --theme_color:#fff;
+    border-color: #fff;
 }
-
+.black-text {
+    color: #121212;
+}
+.dark-theme.black-text{
+    color: #fff;
+}
 .up-slide {
     position: relative;
     animation: animatetop 0.6s
@@ -39,7 +45,9 @@ body {
     --body_height: 125vw;
     --header_shadow: rgba(60,64,67,0.15);
 }
-
+.dark-theme{
+    --white:#000;
+}
 dcn-title {
     padding-left: 2vw;
     text-transform: uppercase;
@@ -215,12 +223,12 @@ dcn-title-word0 {
 }
 
 dcn-title-word1 {
-    color: var(--primary_color);
+    color: var(--primary_color) !important;
     text-transform: capitalize !important;
 }
 
 dcn-title-word2 {
-    color: var(--red);
+    color: var(--red) !important;
 }
 
 .cow {
@@ -240,6 +248,10 @@ dcn-caption {
     font-size: 2vw;
     font-weight: 550;
     color: rgb(38, 37, 37);
+}
+dcn-caption.dark-theme{
+    color:#fbf9f9 !important;
+    --blue : purple;
 }
 
 dcn-paragraph {
@@ -262,6 +274,10 @@ dcn-text:active {
     transform: scale(0.80);
     user-select: none;
 
+}
+dcn-text.nd:active{
+    transform: none !important;
+    user-select: auto !important;
 }
 
 dcn-card {
@@ -548,6 +564,7 @@ dcn-footer-heading {
   left: 47%;
     width: 4vw;
 }
+
 dcn-banner img.event-banner{
     aspect-ratio: 720/416;
     width: 100%;
@@ -581,13 +598,17 @@ dcn-bold{
 opacity:1
 }
 .btn_f_bn{
-background:none !important;
-color: #000;
-border: 1px solid #000;
+background-color: #001e2b;
+color: var(--primary_color);
+border: 1px solid var(--primary_color);
 user-select: none;
 font-size: 16px;
 
 border-radius: 0.2rem;
+}
+dcn-button.dark-theme{
+    color: #fff;
+    border: 1px solid #fff;
 }
 .btn_f_bn:hover{
     background-color: rgb(0,0,0,.15) !important;
@@ -673,4 +694,7 @@ dcn-link{
 }
 .nd:hover{
     text-decoration: none;
+}
+.checkbox{
+    float: right;
 }

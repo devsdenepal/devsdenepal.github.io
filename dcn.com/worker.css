@@ -581,8 +581,9 @@ dcn-bold{
 opacity:1
 }
 .btn_f_bn{
-background:none !important;
-color: #000;
+    
+background:#001e2b !important;
+color:#fff;
 border: 1px solid #000;
 user-select: none;
 font-size: 16px;

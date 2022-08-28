@@ -11,6 +11,30 @@
   <style>
     @import url(worker.css);
     @import url(default.css);
+
+    .dark-theme {
+      color: var(--theme_color);
+      background-color: var(--primary_color);
+    }
+
+    .bnr {
+      padding: 40px 0;
+      width: 100%;
+      max-height: 1440px;
+      position: relative;
+      border: 2px solid #dfe3e6;
+      box-shadow: 2px 2px 2px #dfe3e6;
+      overflow: hidden;
+      color: #001e2b;
+      background: no-repeat url(https://jess.forem.lol/remoteimages/uploads/articles/76ooqjofkcqviqoupdpi.png) white;
+      background-size: cover;
+      background-position: center;
+    }
+
+    dcn-header.dark-theme {
+      color: #000;
+      background-color: aliceblue;
+    }
   </style>
 </head>
 
@@ -23,7 +47,7 @@
     </dcn-center>
   </dcn-notification-bar>
 
-  <dcn-header>
+  <dcn-header id="hdr">
     <dcn-title>
       <dcn-title-word0>Dev</dcn-title-word0>
       <dcn-title-word1> Community</dcn-title-word1>
@@ -32,22 +56,24 @@
     <dcn-sup>&reg;</dcn-sup>
     <dcn-navbar>
       <dcn-text>Events</dcn-text>
-      <dcn-text>About the community</dcn-text>
+      <dcn-text>Community</dcn-text>
       <dcn-text>Bootcamps</dcn-text>
       <dcn-text>Ask a question</dcn-text>
-      <dcn-text class="nd"><dcn-button class="btn-f-bn login-button">Login to dcn.com</dcn-button></dcn-text>
+      <dcn-text class="nd">
+        <dcn-button class="btn-f-bn login-button" id="0" onclick="toggle_theme(this.id)">Change Theme</dcn-button>
+      </dcn-text>
       <dcn-text>
         <dcn-button class="cow round-m" onclick="subscribe()">Subscribe</dcn-button>
       </dcn-text>
     </dcn-navbar>
   </dcn-header><br /><br /><br /><br />
   <dcn-banner class="main-banner">
-    <dcn-flex>
-      <dcn-caption>
+    <dcn-flex class="bnr">
+      <dcn-caption id="cptn">
         <dcn-heading-1 style="color: var(--blue);">30 Days of Self Guided Learning </dcn-heading-1> <br /><br />
         <dcn-med-text style="font-size: 15px;">An initiative by ITSNP ORG to help women tech enthusiast connect and learn new skills daily for 30 days for at least an hour a day while connecting and creating projects together.</dcn-med-text>
         <br /> <br />
-        <dcn-button class="btn_f_bn">Watch now </dcn-button>
+        <dcn-button class="btn_f_bn" id="wtb">Watch now </dcn-button>
       </dcn-caption>
       <img src="assets/images/30dc_6s.webp" alt="banner" class="event_banner" id="preview">
       <br />

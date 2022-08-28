@@ -112,61 +112,21 @@ const author = the_author;
 //   });
   
 //   observer.observe(document.querySelector('dcn-grids'));
-  const observer_for_hr = new IntersectionObserver(entries => {
-    // Loop over the entries
-    entries.forEach(entry => {
-      // If the element is visible
-      if (entry.isIntersecting) {
-        // Add the animation class
-        entry.target.classList.add('expanded');
-      }
-    });
-  });
+//   const observer_for_hr = new IntersectionObserver(entries => {
+//     // Loop over the entries
+//     entries.forEach(entry => {
+//       // If the element is visible
+//       if (entry.isIntersecting) {
+//         // Add the animation class
+//         entry.target.classList.add('expanded');
+//       }
+//     });
+//   });
   
-  observer_for_hr.observe(document.querySelector('dcn-hr'));
-let slide = document.getElementById("preview").src;
-let slided = 0;
-setTimeout(change_slide,6000);
-function change_slide(){
-  if(document.getElementById("preview").src && slided==0){
-    document.getElementById("preview").src = "assets/images/intro_6s.webp"
- setTimeout(slide2,1500);
-    function slide2(){
-  document.getElementById("preview").src = "assets/images/30dc_6s.webp"
+//   observer_for_hr.observe(document.querySelector('dcn-hr'));
 
- }
- setTimeout(slide3,1500);
- function slide3(){
-  document.getElementById("preview").src = "assets/images/c_6.webp"
+// setTimeout(change_slide,6000);
 
- }
- setTimeout(slide4,1500);
- function slide4(){
-  document.getElementById("preview").src = "assets/images/s_6.webp"
-
- }
-}
-setTimeout(change_slide2,12000);
-function change_slide2(){
- setTimeout(slide5,1500);
- function slide5(){
-  document.getElementById("preview").src = "assets/images/l_6.webp"
-
- }
- setTimeout(slide6,1500);
- function slide6(){
-  document.getElementById("preview").src = "assets/images/m_6.webp"
-
- }
- setTimeout(slide7,1500);
- function slide7(){
-  document.getElementById("preview").src = "assets/images/n_6.webp"
-
- }
-     }
-  slided = 0;
-  console.log(document.getElementById("preview").src);
-}
 //making dcn-link href working
 let link = document.getElementsByTagName("dcn-link")
 document.getElementsByTagName("dcn-link").onclick = function(){
@@ -178,12 +138,13 @@ if(theme<2){
 if(theme="0"){
  var body = document.body;
   body.classList.toggle("dark-theme");
-var header = document.getElementById("hdr");
-header.classList.toggle("dark-theme");
-var caption = document.getElementById("cptn");
-caption.classList.toggle("dark-theme");
-var special_button = document.getElementById("wtb");
-special_button.classList.toggle("dark-theme");
+// var header = document.getElementById("hdr");
+// header.classList.toggle("dark-theme");
+// var caption = document.getElementById("cptn");
+// caption.classList.toggle("dark-theme");
+// var special_button = document.getElementById("wtb");
+// special_button.classList.toggle("dark-theme");
+// 
 }
 }
 }
