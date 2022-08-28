@@ -55,10 +55,28 @@
                 <dcn-button class="cow round-m" onclick="subscribe()">Subscribe</dcn-button>
             </dcn-text>
         </dcn-navbar>
-    </dcn-header><br /><br /><br /><br />
-    <section class="main">
-        <dcn-button class="right-nav">=</dcn-button>
-<section class="menu"><dcn-heading-1 style="color:black;">Hi</dcn-heading-1></section>
+    </dcn-header>
+
+    <section class="menu"><br /><br />
+        <dcn-navbar>
+<dcn-nav-button style="color:#fff;background-color:var(--blue)">Dashboard</dcn-nav-button>
+<dcn-nav-button>Courses</dcn-nav-button>
+<dcn-nav-button>Blog</dcn-nav-button>
+<dcn-nav-button>Events</dcn-nav-button>
+<dcn-nav-button>FAQs</dcn-nav-button>
+<dcn-nav-button>Tech Support</dcn-nav-button>
+<dcn-nav-button>Guides</dcn-nav-button>
+<dcn-nav-button>Our members</dcn-nav-button>
+<dcn-nav-button>Who are we?</dcn-nav-button>
+<dcn-nav-button>Get in touch</dcn-nav-button>
+<dcn-nav-button>Our Platforms</dcn-nav-button>
+        </dcn-navbar>
+        <dcn-navbar class="bottom">
+<dcn-nav-button>Terms of service and policy</dcn-nav-button>
+<h3>&copy;<dcn-title-word0>Dev</dcn-title-word0><dcn-title-word1>Community</dcn-title-word1><dcn-title-word2>Nepal</dcn-title-word2>
+    </h3>
+</dcn-navbar>
+    </section>
     </section>
     <script src="community.js"></script>
 </body>
