@@ -1,4 +1,4 @@
-// Credits to Developer Nikhil Anand for developing such a script.
+// Credits to Developer GautamKumar for developing such a script.
 // NO LICENSE REQUIRED FOR RUNNUNG THIS SCRIPT
 // Purpose: For emergency use only
 var original_elements = document.body.innerHTML;

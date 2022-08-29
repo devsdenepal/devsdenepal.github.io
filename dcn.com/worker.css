@@ -100,7 +100,7 @@ dcn-button:hover {
 }
 
 dcn-text:hover {
-    text-decoration: underline wavy fuchsia 0.2vw;
+    text-decoration: underline wavy fuchsia 0.2vw !important;
 }
 
 dcn-text:last-child:hover {
@@ -215,7 +215,7 @@ dcn-title-word0 {
 }
 
 dcn-title-word1 {
-    color: var(--primary_color);
+    color: black;
     text-transform: capitalize !important;
 }
 
@@ -674,4 +674,9 @@ dcn-link{
 }
 .nd:hover{
     text-decoration: none;
+}
+
+.visible-link,.visible-link:hover,.visible-link:active,.visible-link:visited{
+    color: inherit;
+    text-decoration: underline wavy fuchsia 0.2vw
 }

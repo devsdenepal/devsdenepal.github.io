@@ -95,7 +95,7 @@ function subscribe(){
     window.open("https://youtube.com/c/devcommunitynepal/?sub_confirmation=1",);
 }
 function navigate(page){
-   let link = page + ".php";
+   let link = page + ".html";
     window.open(link,"_blank");
 }
 // const observer = new IntersectionObserver(entries => {
@@ -133,18 +133,16 @@ document.getElementsByTagName("dcn-link").onclick = function(){
 window.open(link,"_blank");
 }
 function toggle_theme(theme){
-if(theme<2){
-  document.getElementById(theme).id += 1;
-if(theme="0"){
+
  var body = document.body;
   body.classList.toggle("dark-theme");
-// var header = document.getElementById("hdr");
-// header.classList.toggle("dark-theme");
-// var caption = document.getElementById("cptn");
-// caption.classList.toggle("dark-theme");
-// var special_button = document.getElementById("wtb");
-// special_button.classList.toggle("dark-theme");
+  if(document.getElementById(theme).src="../assets/icons/night.png"){
+    document.getElementById(theme).src="../assets/icons/sun-rotating.gif";
+  setTimeout(document.getElementById(theme).src="../assets/icons/sun.png",2000);  
 // 
+  }
+  else{
+    document.getElementById("0").src="../assets/icons/night.gif";
+  }
 }
-}
-}
+

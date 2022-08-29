@@ -56,7 +56,9 @@
     <dcn-sup>&reg;</dcn-sup>
     <dcn-navbar>
       <dcn-text>Events</dcn-text>
-      <dcn-text>Community</dcn-text>
+      <a href="community/" target="_blank" class="visible-link">
+        <dcn-text>Community</dcn-text>
+      </a>
       <dcn-text>Bootcamps</dcn-text>
       <dcn-text>Ask a question</dcn-text>
       <dcn-text class="nd">
