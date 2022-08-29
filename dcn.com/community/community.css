@@ -131,7 +131,8 @@ a:hover{
   object-fit: cover;
 }
 .main img:hover{
-    cursor
+    scale:0.999;
+    cursor:pointer;
 }
 .card {
   display: flex;
