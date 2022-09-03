@@ -1,74 +1,84 @@
 * {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 * dcn-header {
-    padding: 10px !important;
-    top: 0% !important;
+  padding: 10px !important;
+  top: 0% !important;
 }
 
 .right-nav {
-    float: left !important;
-    color: #fff;
+  float: left !important;
+  color: #fff;
 
-    text-align: center;
+  text-align: center;
 }
 
-.menu { 
-    position: fixed;
-    line-height: 200%;
-    padding-top: 1% !important;
-    height: 100%;
-    max-height: 1500px;
-    width: 20vw;
-    /* border: 2px solid black; */
+.menu {
+  position: fixed;
+  line-height: 200%;
+  padding-top: 1% !important;
+  height: 100%;
+  max-height: 1500px;
+  width: 20vw;
+  /* border: 2px solid black; */
 }
-.recommended{
-    position: fixed;
-    top: 15%;
-    right: 0%;
+
+.recommended {
+  position: fixed;
+  top: 15%;
+  right: 0%;
 }
-.recommended h1,h2,h3{
-    text-align: center;
+
+.recommended h1,
+h2,
+h3 {
+  text-align: center;
 }
-.recommended img{
-    cursor: pointer;
+
+.recommended img {
+  cursor: pointer;
 }
-.recommended img:hover{
-    scale: 0.99;
+
+.recommended img:hover {
+  scale: 0.99;
 }
-.menu hr{
-    display: hidden;
+
+.menu hr {
+  display: hidden;
 }
+
 dcn-nav-button {
-    
-    cursor: pointer;
-    font-size: 1rem;
-    padding: 0.5vw;
-    
-    display: list-item;
-    padding-left: 1.5vw;
-    font-weight: 600;
-    font-size: 20px;
+
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5vw;
+
+  display: list-item;
+  padding-left: 1.5vw;
+  font-weight: 600;
+  font-size: 20px;
 
 }
-dcn-nav-button img{
-    display: inline-flex;
-    padding-left: 2px;
+
+dcn-nav-button img {
+  display: inline-flex;
+  padding-left: 2px;
 }
+
 .visiting {
-    background-color: var(--blue) !important;
-    color: #fff !important;
+  background-color: var(--blue) !important;
+  color: #fff !important;
 }
 
 dcn-nav-button:hover {
-    background-color: var(--blue);
-    color: #fff;
+  background-color: var(--blue);
+  color: #fff;
 }
 
 .bottom {
-    position: relative;
-    bottom: 0%;
+  position: relative;
+  bottom: 0%;
 }
 
 /* .main {
@@ -78,25 +88,29 @@ dcn-nav-button:hover {
 } */
 
 .round {
-    border-radius: 50%
+  border-radius: 50%
 }
 
 .icon {
-    display: inline-flex;
-    width: 25px;
-    height: 25px;
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
 }
-.icon2{
-    display: inline-flex;
-    width: 35px;
-    height: 35px;
+
+.icon2 {
+  display: inline-flex;
+  width: 35px;
+  height: 35px;
 }
-a{
-    color: blue
+
+a {
+  color: blue
 }
-a:hover{
-    color: blue;
+
+a:hover {
+  color: blue;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 *,
@@ -126,14 +140,15 @@ a:hover{
 }
 
 .main img {
+  cursor: pointer;
   max-width: 100%;
   display: block;
   object-fit: cover;
+  overflow: hidden;
 }
-.main img:hover{
-    scale:0.999;
-    cursor:pointer;
-}
+
+
+
 .card {
   display: flex;
   flex-direction: column;
@@ -143,14 +158,14 @@ a:hover{
   box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
   background: #ECE9E6;
-background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  height: max-content;
 }
 
 
 
 .card__body {
-  padding: 1rem;
+  padding: 6px;
   display: flex;
   flex-direction: column;
   gap: .5rem;
@@ -164,25 +179,25 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
   font-size: .75rem;
 }
 
-.tag + .tag {
+.tag+.tag {
   margin-left: .5em;
 }
 
 .tag-blue {
   background: #56CCF2;
-background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
   color: #fafafa;
 }
 
 .tag-brown {
   background: #D1913C;
-background: linear-gradient(to bottom, #FFD194, #D1913C);
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
   color: #fafafa;
 }
 
 .tag-red {
   background: #cb2d3e;
-background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   color: #fafafa;
 }
 
@@ -206,11 +221,33 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   border-radius: 50%;
 }
 
-.user__info > small {
+.user__info>small {
   color: #666;
 }
-.main{
-    position: absolute;
-    top: 15%;
-    left:40vw;
+
+.main {
+  position: absolute;
+  top: 15%;
+  left: 40vw;
+  overflow-y: visible;
+}
+
+.card h4 {
+  font-size: 15px;
+}
+
+.card p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+/* .card h5{
+  font-size:15.9px;
+
+} */
+.card_header,.card__body,.card__footer,.user,.user__info{
+  overflow: hidden;
+}
+.footer{
+  position: absolute;
+
 }

@@ -147,13 +147,13 @@ body {
     width: 100%;
 }
 
-h1 {
+/* h1 {
     margin: 0;
     padding: 8px 48px;
     background: #333;
     color: var(--white);
     font-size: 24px;
-}
+} */
 
 .main-section {
     height: 545px;
