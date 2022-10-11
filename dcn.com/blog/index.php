@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- <meta http-equiv="refresh" content = "1"> -->
+<!-- <meta http-equiv="refresh" content = "1"> -->
 <?php
-  session_start();
-  $lg = true;
-//   include_once "php/config.php";
-  if(!isset($_SESSION['unique_id'])){
-  $lg = false;
-  }
+// Initialize the session
+session_start();
+error_reporting(E_ERROR | E_PARSE);
+$usr = $_SESSION['username'];
+
+// Check if the user is already logged in, if yes then redirect him to welcome page
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+    echo  '<iframe name="worker" class="muted"></iframe>  <div><div> <div id="fb-root"></div>
+    <dcn-header-section>
+        <dcn-header id="hdr">
+            <dcn-title>
+                <dcn-title-word0>Dev</dcn-title-word0>
+                <dcn-title-word1> Community</dcn-title-word1>
+                <dcn-title-word2> Nepal</dcn-title-word2>
+            </dcn-title>
+            <dcn-sup>&reg;</dcn-sup>
+            <dcn-navbar style="display: inline-flex; flex-direction: row;float: right;}">
+            <dcn-text><image src="https://picsum.photos/200" style="width;40px;height:40px;border-radius:50%;border:1px solid black;padding:0px;vertical-align:baseline;" title= "' . $usr . '" onclick="open_option()">' . '</dcn-text>
+                <dcn-text><input type="search" placeholder="Search.." style="margin-top:10px !important;"></dcn-text>
+                <dcn-text class="nd">
+                    <input title="dark-mode" type="image" class="icon2 btn-f-bn login-button" id="0" onclick="toggle_theme(this.id)" src="../assets/icons/night.png">
+                </dcn-text>
+                <dcn-text>
+                    <dcn-button class="cow round-m" onclick="subscribe()">Subscribe</dcn-button>
+                </dcn-text>
+            </dcn-navbar>';
+} else {
+    echo '<script>window.location.href="login.php"</script>';
+}
+
+// Include config file
+require_once "config.php";
 ?>
+
 <head>
     <meta charset="UTF-8">
     <meta property="og:title" content="DCN : Dev Community Nepal">
@@ -44,77 +71,61 @@
             background-color: aliceblue;
         }
     </style>
+    <script src="https://kit.fontawesome.com/1364c3c233.js" crossorigin="anonymous" defer></script>
+    <script src="blog.js" defer></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0" nonce="Z8ak8wbb"></script>
+
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0"
-        nonce="Z8ak8wbb"></script>
 
-    <dcn-header id="hdr">
-        <dcn-title>
-            <dcn-title-word0>Dev</dcn-title-word0>
-            <dcn-title-word1> Community</dcn-title-word1>
-            <dcn-title-word2> Nepal</dcn-title-word2>
-        </dcn-title>
-        <dcn-sup>&reg;</dcn-sup>
-        <dcn-navbar>
-            <dcn-text><input type="search" placeholder="Search.."></dcn-text>
-            <dcn-text class="nd">
-                <input title="dark-mode" type="image" class="icon2 btn-f-bn login-button" id="0"
-                    onclick="toggle_theme(this.id)" src="../assets/icons/night.png">
-            </dcn-text>
-            <dcn-text>
-                <dcn-button class="cow round-m" onclick="subscribe()">Subscribe</dcn-button>
-            </dcn-text>
-        </dcn-navbar>
     </dcn-header>
+    <!-- 
+    <section class="menu"><br /><br />        -->
 
-    <section class="menu"><br /><br />
+    <dcn-header style="top:10% !important" id="hdr2">
+        <hr />
         <dcn-navbar>
-            <dcn-nav-button onclick="navigate(this.id)" id="community"><img
-                    src="../assets/icons/dashboard.webp" class="round icon">&nbsp;&nbsp;Dashboard</dcn-nav-button>
-            <hr />
-            <dcn-nav-button onclick="navigate(this.id)"  id="course"><img src="../assets/icons/book.png"
-                    class="icon">&nbsp;&nbsp;Courses</dcn-nav-button>
-            <hr />
-            <dcn-nav-button onclick="navigate(this.id)" id="blog" id="course" style="color:#fff;background-color:var(--blue)"><img src="../assets/icons/blog.png"
-                    class=" round icon">&nbsp;&nbsp;Blog</dcn-nav-button>
-            <hr />
-            <dcn-nav-button onclick="navigate(this.id)" id="events"><img src="../assets/icons/calendar.png"
-                    class="icon">&nbsp;&nbsp;Events</dcn-nav-button>
-            <hr />
-            <dcn-nav-button onclick="navigate(this.id)" id="faq"><img src="../assets/icons/faq.svg"
-                    class="icon">&nbsp;&nbsp;FAQs</dcn-nav-button>
-            <hr />
-            <dcn-nav-button onclick="navigate(this.id)" id="tech-support"><img src="../assets/icons/tech-support.png"
-                    class="icon">&nbsp;&nbsp;Tech Support</dcn-nav-button>
-            <hr />
-            <dcn-nav-button onclick="navigate(this.id)" id="guide"><img src="../assets/icons/bulb.png"
-                    class=" round icon">&nbsp;&nbsp;Guides</dcn-nav-button>
-            <hr />
-            <dcn-nav-button onclick="navigate(this.id)" id=""><img src="../assets/icons/badge.png"
-                    class="icon round ">&nbsp;&nbsp;Our members</dcn-nav-button>
-            <hr />
-            <hr />
-            <dcn-nav-button>&nbsp;&nbsp;Who are we?</dcn-nav-button>
-            <dcn-nav-button>&nbsp;&nbsp;Get in touch</dcn-nav-button>
-            <dcn-nav-button>&nbsp;&nbsp;Our Platforms</dcn-nav-button>
-        </dcn-navbar>
-        <dcn-navbar class="bottom">
+            <dcn-text onclick="navigate(this.id)" id="community">&nbsp;&nbsp;Dashboard</dcn-text>
 
-            <h3>
+            <dcn-text onclick="navigate(this.id)" id="course">&nbsp;&nbsp;Courses</dcn-text>
+
+
+
+            <dcn-text onclick="navigate(this.id)" id="events">&nbsp;&nbsp;Events</dcn-text>
+
+            <dcn-text onclick="navigate(this.id)" id="faq">&nbsp;&nbsp;FAQs</dcn-text>
+
+            <dcn-text onclick="navigate(this.id)" id="tech-support">&nbsp;&nbsp;Tech Support</dcn-text>
+
+            <dcn-text onclick="navigate(this.id)" id="guide">&nbsp;&nbsp;Guides</dcn-text>
+
+            <dcn-text onclick="navigate(this.id)" id="">&nbsp;&nbsp;Our members</dcn-text>
+
+
+            <dcn-text>&nbsp;&nbsp;Who are we?</dcn-text>
+            <dcn-text>&nbsp;&nbsp;Get in touch</dcn-text>
+            <dcn-text>&nbsp;&nbsp;Our Platforms</dcn-text>
+        </dcn-navbar>
+        </dcn-header-section>
+        <!-- <dcn-navbar class="bottom"> -->
+
+        <!-- <h3>
                 <dcn-title-word0>Dev</dcn-title-word0>
                 <dcn-title-word1>Community</dcn-title-word1>
                 <dcn-title-word2>Nepal</dcn-title-word2>&copy;
             </h3>
             <a href="#policy">Terms of service and policy</a>
-            <!-- <div class="fb-like" data-href="https://facebook.com/DevCommunityNepal" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div> -->
-        </dcn-navbar>
+             <div class="fb-like" data-href="https://facebook.com/DevCommunityNepal" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div> 
+        </dcn-navbar> -->
+    </dcn-header>
     </section>
     <section class="main">
-        <div class="login-panel-i"><button class="login-button i-b" style=""><?php if($lg){echo "lg";}else{
-            echo"Login";}?></button></div>
-            <div class="card container card_head welcome-board" style=""><div class="w-h">Welcome to the hub of Nepali developers</div>
-            </div>        <main>
-            </main></section><script src="blog.js"></script></body></html>
+
+
+    </section>
+    </section>
+
+</body>
+
+</html>
