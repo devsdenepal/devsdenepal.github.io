@@ -3,36 +3,81 @@
 <html>
 
 <head>
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <link rel="favicon" href="logo.png">
-  <link rel="shortcut icon" href="logo.png">
+    <link rel="favicon" href="images/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="shortcut icon" href="logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="docs/main.css">
-    <title>Devs D`e Nepal</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Devs d`e Nepal</title>
 </head>
-
-<body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
-    <header class="text-amber-50 body-font bg-white text-black shadow-lg" style="z-index:6000">
+<body class="bg-gray-900">
+    <header class="text-gray-400 bg-gray-900 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-amber-50 mb-4 md:mb-0">
-                <img src="logo.png" alt="logo" class="w-20 h-20 text-black p-2  rounded-full">
-                <span class="ml-3 lg-txt typewriter" style="color: #000;font-size: 1.5vw; font-weight: 800; text-transform: uppercase; ">Devs d`e Nepal</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-indigo-600 hover:border-b-2">Home</a>
-                <a class="mr-5 hover:text-indigo-600 hover:border-b-2">About us</a>
-                <a class="mr-5 hover:text-indigo-600 hover:border-b-2">Have a query?</a>
-                <a class="mr-5 hover:text-indigo-600 hover:border-b-2">Events</a>
-            </nav>
-
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Devs d`e Nepal</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-white">Home</a>
+            <a class="mr-5 hover:text-white">Topics in Trend</a>
+            <a class="mr-5 hover:text-white">Recent(s)</a>
+            <a class="mr-5 hover:text-white">Who are we?</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Share to your friends
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
         </div>
-    </header>
-    <section class="text-right items-center p-2" style="background-image: url('images/computer-3174729.jpg');background-size:cover;background-position: -1.5%;background-repeat:no-repeat;width:100%;height:480px;">
-     <div style="font-size:02rem;font-family:'Times New Roman', Times, serif;" class="text-white p-4">Hi , <br/>I'm <span class="text-yellow-300 font-sans"><b> Gautam Kumar</b></span>.
-      
-     <div class="flex-wrap font-sans text-s">Learning & <span class=" text-green-800" style="font-family:monospace">coding</span> is my hobby</div>
-    </section></body>
-</html>
+      </header>
+      <section class="text-gray-400 body-font bg-gray-900">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Get everything dumped...</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">
+                
+                We try to write every unseen, unread, and never written or less discussed contents. Quench your search for daily unique and trending questions.  
+            </p>
+          </div>
+          <!-- <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
+                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-white font-medium title-font mb-4">Chichen Itza</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content">
+                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-white font-medium title-font mb-4">Colosseum Roma</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content">
+                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-white font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content">
+                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">SUBTITLE</h3>
+                <h2 class="text-lg text-white font-medium title-font mb-4">San Francisco</h2>
+                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+              </div>-->
+            </div>
+          </div>
+        </div> 
+      </section>
+</body>
