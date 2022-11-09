@@ -35,4 +35,4 @@ if(cactusLeft < 50 && cactusLeft > 0 && dinoTop < 150){
 document.addEventListener("keydown", function (event) {
   jump();
 });
-//1
+//2
