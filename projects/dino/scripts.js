@@ -29,7 +29,7 @@ let isAlive = setInterval(function () {
 if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
     // collision
     if(confirm("Game over, made: "+player_score)){
-        localStorage.setItem("last_player+")
+        localStorage.setItem("last_player",player_score)
         history.go(0)
     }
     else{
