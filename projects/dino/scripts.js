@@ -1,10 +1,10 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 const player_score= 0;
-const log_board = document.getElementById("log").innerText
+const log_board = document.getElementById("score").innerText
 setInterval(function(){
     log_board == player_score
-},100)
+},10)
 function jump() {
   if (dino.classList != "jump") {
     dino.classList.add("jump");
