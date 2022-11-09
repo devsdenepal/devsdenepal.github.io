@@ -28,7 +28,7 @@ if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
     // collision
     alert("Game Over!");
   }
-if(cactucactusLeft < 50 && cactusLeft > 0 && dinoTop <= 140){
+if(cactucactusLeft < 50 && cactusLeft > 0 && dinoTop < 150){
     player_score+=1;
 }
 }, 10);
