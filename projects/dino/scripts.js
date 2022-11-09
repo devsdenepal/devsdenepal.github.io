@@ -3,7 +3,7 @@ const cactus = document.getElementById("cactus");
 let player_score= 0;
 const log_board = document.getElementById("score").innerText
 setInterval(function(){
-    log_board == player_score
+    log_board = player_score;
 },10)
 function jump() {
   if (dino.classList != "jump") {
