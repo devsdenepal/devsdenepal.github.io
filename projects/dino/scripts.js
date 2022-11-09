@@ -2,7 +2,7 @@ const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 let player_score= 0;
 if(localStorage.getItem("last_player_score")!==null){
-player_score = localStorage.getItem("last-player_score");
+player_score = parseInt(localStorage.getItem("last-player_score"));
 }
 let log_board = document.getElementById("score")
 setInterval(function(){
