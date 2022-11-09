@@ -1,11 +1,13 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 let player_score= 0;
+if(localStorage.getItem("last_player_score")!==null){
+player_score = localStorage.getItem("last-player_score");
+}
 let log_board = document.getElementById("score")
 setInterval(function(){
     log_board.innerText = player_score;
 },300)
-function jump() {
   if (dino.classList != "jump") {
     dino.classList.add("jump");
 
@@ -26,7 +28,8 @@ let isAlive = setInterval(function () {
 if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
     // collision
     if(confirm("Game over, made: "+player_score)){
-        history.go(0)
+        localStorage.setItem("last_player_score",player_score);
+        history.go(0);
     }
     else{
         clearInterval(isAlive);
