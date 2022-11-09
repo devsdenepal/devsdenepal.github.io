@@ -1,9 +1,9 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 let player_score= 0;
-let log_board = document.getElementById("score").innerText
+let log_board = document.getElementById("score")
 setInterval(function(){
-    log_board = player_score;
+    log_board.innerText = player_score;
 },10)
 function jump() {
   if (dino.classList != "jump") {
