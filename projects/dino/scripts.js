@@ -1,9 +1,9 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
-const player = [{"logs":{"score":"0"}}];
+const player_score= 0;
 const log_board = document.getElementById("log").innerText
 setInterval(function(){
-    log_board == player.score
+    log_board == player_score
 },100)
 function jump() {
   if (dino.classList != "jump") {
@@ -29,7 +29,7 @@ if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
     alert("Game Over!");
   }
 if(cactucactusLeft < 50 && cactusLeft > 0 && dinoTop <= 140){
-    player.logs.score==1;
+    player_score+=1;
 }
 }, 10);
 
