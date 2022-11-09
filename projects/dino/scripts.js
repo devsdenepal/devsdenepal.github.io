@@ -1,7 +1,7 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 let player_score= 0;
-const log_board = document.getElementById("score").innerText
+let log_board = document.getElementById("score").innerText
 setInterval(function(){
     log_board = player_score;
 },10)
