@@ -1,3 +1,6 @@
+*{
+    background-color: rgb(17 24 39);
+}
 .game {
     width: 600px;
     height: 200px;
