@@ -1,4 +1,4 @@
-*{
+body{
     background-color: rgb(17 24 39);
 }
 .game {
@@ -6,6 +6,7 @@
     height: 200px;
     border: 1px solid black;
     margin: auto;
+    background-color: #fff;
 }
 
 #dino {
