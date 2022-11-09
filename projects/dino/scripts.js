@@ -4,7 +4,7 @@ let player_score= 0;
 let log_board = document.getElementById("score")
 setInterval(function(){
     log_board.innerText = player_score;
-},10)
+},300)
 function jump() {
   if (dino.classList != "jump") {
     dino.classList.add("jump");
