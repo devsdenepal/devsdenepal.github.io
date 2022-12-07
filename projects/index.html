@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a biography | ELFOW</title>
+</head>
+
+<body>
+<nav class="navbar navbar-dark navbar-expand-sm bg-primary">
+
+<div class="container-fluid">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link navbar-brand" href="#">ELFOW</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Guide(s)</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About the developer</a>
+    </li>
+  </ul>
+</div>
+
+</nav>
+<section style="padding:10px !important;text-align:center;font-family:sans-sarif;font-size: 18px;
+line-height: 1.58;
+letter-spacing: -.004em;margin: 10px 0 30px;
+color: rgba(0,0,0,.84);
+font-weight: 400;">
+   <h1> My Mom : A short biography generator</h1>
+<hr/>
+            <div class="mb-3">
+              
+                <div id="content"></div><hr/><div id="detail"></div>
+<br/></br><button class="btn btn-primary" onclick="customize()">Generate</button><button class="btn btn-primary" onclick="read_aloud()"> Read Aloud</button>
+                <input type="hidden" name="font_size" id="font_size">
+            </div>
+            <div class="container-fluid row">
+              
+            </div>
+           
+        </form>
+        <div id="preview"></div>
+    </div>
+</section>
+    <script defer>
+           
+ 
+            
+           
+        function customize(){
+            
+          
+            biography_intro = [
+"First of all, Mother is a word which fills everyone with emotions. A Mother is certainly the most important human being in everyones life. Mothers Love for her child certainly cannot be compared with anything. Her level of forgiveness is unmatchable. A Mother is capable of forgiving any wrongdoing. Mother is the most important woman in everyones life. A mother sacrifices her happiness for her child. No one else can care for their kids the way a Mother does.  A Mother is great and does not need anyone like me explaining that. This biography on my mother is a small attempt to discover the greatness of a mother.",
+"Mothers are highly responsible women. They certainly play a very important role in the upbringing of a child. Most noteworthy, Mothers play a huge role in determining a childs attitude. Whether a child will be good or evil in the future depends upon the Mother. The moral values taught by Mother probably play a huge role. Individuals often remember their Mothers values until old age. Hence, the Mother is responsible for the well-being of society. The future of society in a large way is the result of a Mothers teaching.",
+"Mothers also are the emotional backbone of the family. They support everyones feeling in a family. Family members can certainly tell their emotions to Mothers without worry. An individual can share almost any secret with Mother. This is because Mothers have a huge level of trust with their family. Furthermore, Mothers have an extremely forgiving nature. Hence, even wrongdoing can be shared with a Mother.",
+"Mothers are precious gifts from God. Without mothers, life would certainly be dark and gloomy. Therefore, it is our duty to help and support our Mothers. One important way to do that is to help in chores. Individuals must try to do more household work. This would certainly reduce the burden of Mothers. Hence, this will also improve her health.Another way of supporting Mothers is to speak words of affirmation."];
+//biography body
+biography_body_para1 =
+[
+"My mother is an ordinary woman she is my superhero. In every step of my, she supported and encouraged me. Whether day or night she was always there for me no matter what the condition is. Furthermore, her every work, persistence, devotion, dedication, conduct is an inspiration for me. In this essay on my mother, I am going to talk about my mother and why she is so special to me.",
+"I love my mother  not because she is my mother and we should respect our elders. I respect her because she has taken care of me when I was not able to speak. At that time, she has taken care of all my needs when I was not able to speak.",
+"My mother taught me how to walk, speak, and take care of myself. Similarly, every bigger step that I have taken in my life is all because of my mother. Because, if she has not taught me how to take small steps then I would not be able to take these bigger step.",
+"My mother is an essence of truthfulness, love, and sincerity. Another reason is that she showers her family with her blessing and live. Furthermore, she gives us everything but never demand anything in return. The way she cares for everyone in the family inspires me to the same in my future."
+]
+biography_body_para2=
+["Born on XYZ DATE with taking kind and sensitive behavior, she took all responsibilities of her family from a very young age. She never forced her parents to provide her with rich facilities. Her simplicity has been the most attracting factor of her life which made her comfortable to be fit in every situation. She completed her education from XYZ School from Primary to Higher. During her studies, she fought many competitions like XYZ, XYZ and XYZ and ranked first in them. ANY EXTRA FACT. She completed XYZ from XYZ,XYZ with y%. She has been quite genius in solving Maths problems as well as Accounting, but she was not as she is today.Mathematics was her one of the major weak subjects which she tried to escape from but she did not. Her efforts and tries made her what she is today. She was also rewarded with a scolarship from some UN programmes during her school as well as college time.",
+"She is born on XYZ date at XYZ place. She graduted from XYZ college. She has many stories to tell us about her childhood memories. She has been a great lover of Bollywood Movies and specially of Amitabh Bachchan and also the epic Ramayana serial and Mahabharat serial launched at her time. As much she had interest in movies, she also has interest in teaching[USE SPECIFIC/RELATIVE]. From the very early age, she started earning for her family by printing newspapers and by teaching at schools. She also has a license permitted from the state for continuing her practise legally.",
+"My mother is of Z years, born on XYZ date at XYZ place. Fighting with every problems of life without expecting anything from anyonehas been her thingking from her birth I think. In every stepsof life sjehelps me. Talking about her education, she compketed Z from XYZ college/ She has been an extraordinary  student with great marks and simplicity in eyes. It is impossible for present generation to be so kind.Although she is not physically very strong she faces every hurdle of her life and of the family too. She motivates me to be like her and never submit in difficult times. Above all, my mother encourages me to improve my all-round skills and studies. She motivates me to try again and again till I get success in it."]
+biography_body_para3= [
+"When I was afraid of the dark she would become my light and guide me in that darkness. Also, if I can not sleep at night she would hold my head on her lap until I fell asleep. Above all, she never leaves my side even in the hardest of times.",
+"She is a great teacher, a lovely friend, a strict parent. Also, she takes cares of the need of the whole family. If there is anyone out there who loves us more than our mother is only God. Not just for my mother but for every mother out there who lives her life for her family deserves praiseworthy applause.",
+"Also, her love is not just for the family she treats every stranger and animals the same way she did to me. Due to, this she is very kind and sensible towards the environment and animals.",
+"Although she is not physically very strong she faces every hurdle of her life and of the family too. She motivates me to be like her and never submit in difficult times. Above all, my mother encourages me to improve my all-round skills and studies. She motivates me to try again and again till I get success in it."]
+           output_f = biography_intro[Math.floor(Math.random() * 4)] + "\n" + biography_body_para1[Math.floor(Math.random() * 4)] + "\n" +biography_body_para2[Math.floor(Math.random() * 3)]+"\n" +biography_body_para3[Math.floor(Math.random() * 4)];
+            document.getElementById("detail").innerText = "Letter(s): "+output_f.length;
+            document.getElementById("content").innerText = output_f;
+           
+        }
+function read_aloud(){
+let message = document.getElementById("content").innerText
+let utterance = new SpeechSynthesisUtterance(message);
+speechSynthesis.speak(utterance);
+}
+    </script>
+</body>
+
+</html>
