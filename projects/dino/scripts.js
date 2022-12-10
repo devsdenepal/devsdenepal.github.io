@@ -9,11 +9,12 @@ setInterval(function(){
     log_board.innerText = player_score;
 },300)
 function jump(){
-   // You may use this function to jump the dino on call
+   
   if (dino.classList != "jump") {
 
     setTimeout(function () {
       dino.classList.remove("jump");
+        return "jumping";
     }, 300);
   }
 }    dino.classList.add("jump");
