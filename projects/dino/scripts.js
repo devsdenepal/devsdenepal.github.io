@@ -9,14 +9,15 @@ setInterval(function(){
     log_board.innerText = player_score;
 },300)
 function jump(){
+   // You may use this function to jump the dino on call
   if (dino.classList != "jump") {
-    dino.classList.add("jump");
 
     setTimeout(function () {
       dino.classList.remove("jump");
     }, 300);
   }
-}
+}    dino.classList.add("jump");
+
 let isAlive = setInterval(function () {
   // get current dino Y position
   let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
