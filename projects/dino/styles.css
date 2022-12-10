@@ -53,8 +53,8 @@ body{
 
     background-image: url("img/cactus.jpg");
     background-size: 20px 40px;
-
-    animation: block 1s infinite linear;
+   
+    animation: block 2s infinite linear;
 }
 
 @keyframes block {
