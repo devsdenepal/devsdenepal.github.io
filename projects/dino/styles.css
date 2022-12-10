@@ -68,6 +68,7 @@ body{
 }
 
 .log {
+    color: #fff;
     width: 600;
     height: max-content;
     border: 1px solid brown;
