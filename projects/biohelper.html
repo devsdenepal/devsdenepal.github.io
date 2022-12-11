@@ -42,7 +42,22 @@ font-weight: 400;">
             <div class="mb-3">
               
                 <div id="content"></div><hr/><div id="detail"></div>
-<br/></br><button class="btn btn-primary" onclick="customize()">Generate</button><button class="btn btn-primary" onclick="read_aloud()"> Read Aloud</button>
+<br/></br><button class="btn btn-primary" onclick="customize()">Generate</button><button class="btn btn-primary" onclick="read_aloud()"> Read Aloud</button>    <div id="google_translate_element"></div>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
                 <input type="hidden" name="font_size" id="font_size">
             </div>
             <div class="container-fluid row">
