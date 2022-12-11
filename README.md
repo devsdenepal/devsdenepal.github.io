@@ -1,4 +1,4 @@
-![Preview](https://github.com/devsdenepal/devsdenepal.github.io/blob/main/logo.png)
+![Preview](https://github.com/devsdenepal/devsdenepal.github.io/blob/main/logo.png?raw=true)
 # Devs d`e Nepal ![view](https://komarev.com/ghpvc/?username=devsdenepal&color=green) 
 ## **`Devs d'e Nepal`** is an independent private/non-commercial reasearch platform related to cyber and cyber-security.
 ### Focuses on :
