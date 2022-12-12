@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Quiz</title>
   <meta charset="utf-8">
@@ -7,123 +8,192 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <style>
-  body {
-      position: relative; 
-  }
+    body {
+      position: relative;
+    }
   </style>
 </head>
+
 <body data-bs-spy="scroll" data-bs-target=".progress-guess" data-bs-offset="50">
-    <nav class="navbar navbar-dark navbar-expand-sm bg-primary">
+  <nav class="navbar navbar-expand-sm">
 
-        <div class="container-fluid">
-          <!-- Links -->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link navbar-brand" href="../../">ELFOW</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../">Guide(s)</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../">About the developer</a>
-            </li>
-          </ul>
-        </div>
-        </nav>
-<div class="navbar navbar-expand-sm bg-warning navbar-dark sticky-top progress-guess">
-  <div class="container-fluid">
-    <ul class="navbar-nav text-info">
-      <li class="nav-item">
-        <a class="nav-link" href="#question1">Question 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#question2">Question 2</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#question3">Question 3</a>
-      </li>
-  <li class="nav-item">
-        <a class="nav-link" href="#question4">Question 4</a>
-      </li>
-  <li class="nav-item">
-        <a class="nav-link" href="#question5">Question 5</a>
-      </li>
-  <li class="nav-item">
-        <a class="nav-link" href="#question6">Question 6</a>
-      </li>
-  <li class="nav-item">
-        <a class="nav-link" href="#question7">Question 7</a>
-      </li>
-  <li class="nav-item">
-        <a class="nav-link" href="#question8">Question 8</a>
-      </li>
-  <li class="nav-item">
-        <a class="nav-link" href="#question9">Question 9</a>
-      </li>
+    <div class="container-fluid">
+      <!-- Links -->
+      <ul class="navbar-nav" style="color: #6610f2 !important;">
         <li class="nav-item">
-        <a class="nav-link" href="#question10">Question 10</a>
-      </li>
-    </ul>
+          <a class="nav-link navbar-brand" href="../../">ELFOW</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../">Guide(s)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../">About the developer</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="navbar navbar-expand-sm bg-warning navbar-dark sticky-top progress-guess">
+    <div class="container-fluid">
+      <ul class="navbar-nav text-info">
+        <li class="nav-item">
+          <a class="nav-link" href="#question1">Question 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#question2">Question 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#question3">Question 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#question4">Question 4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#question5">Question 5</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#question6">Question 6</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#question7">Question 7</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#question8">Question 8</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#question9">Question 9</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#question10">Question 10</a>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
 
-
-<div id="question1" class="container-fluid bg-dark text-dark" style="padding:100px 20px;">
-    <div class="container mt-3">
-
-        <div class="card" style="width:400px">
-          <img class="card-img-top" src="https://i.ytimg.com/vi/b3cZm92x3T8/hqdark_61866.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCdAEaD8mdWxp7MOkmGxQWKz8BkNA" alt="thumbnail" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title">1.What professional flaw has held  you back the most?</h4>
-            <p class="card-text">Choose the best option which suits you:
-            </p>
-
-          </div>
+<!-- QUESTION 1 -->
+  <div id="question1" class="container-fluid bg-dark text-dark" style="padding:50px 10px;">
+    <div class="container-fluid container-expand-sm mt-3"></div>
+    <div class="card" style="width:70%;height:max-content !important;">
+      <img class="card-img-top" src="./hqdefault_61866.webp" alt="thumbnail" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">1.What professional flaw has held you back the most?</h4>
+        <p class="card-text">Choose the best option which suits you:
+        </p>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+          <label class="form-check-label" for="check1">My constant sense of fear, which keeps me from enjoying life to
+            the fullest.</label>
+          </label>
         </div>
-<div id="question2" class="container-fluid bg-dark text-dark" style="padding:100px 20px;">
-    <h1>Section 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+          <label class="form-check-label" for="check1">My hyper fixation on the past, which keeps me from being present
+            in the moment.</label>
+        </div></label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+          <label class="form-check-label" for="check1"> My lack of confidence in myself and my abilities, which has made me miss out on a lot of great opportunities.</label>
+        </div></label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+          <label class="form-check-label" for="check1"> My perfectionism, and need to overachieve, which keeps me from being happy</label>
+        </div></label>
+      </div>
+    </div>
   </div>
-  <div id="question3" class="container-fluid bg-dark text-dark" style="padding:100px 20px;">
-    <h1>Section 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   </div>
-  <div id="question4" class="container-fluid bg-dark text-dark" style="padding:100px 20px;">
-    <h1>Section 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   </div>
-  <div id="question5" class="container-fluid bg-dark text-dark" style="padding:100px 20px;">
-    <h1>Section 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   </div>
-  <div id="question6" class="container-fluid bg-dark text-dark" style="padding:100px 20px;">
-    <h1>Section 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   </div>
-  <div id="question7" class="container-fluid bg-dark text-dark" style="padding:100px 20px;">
-    <h1>Section 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   </div>
-  <div id="question8" class="container-fluid bg-dark text-dark" style="padding:100px 20px;">
-    <h1>Section 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <div id="question2" class="container-fluid bg-dark text-dark" style="padding:50px 10px;">
+    <div class="container-fluid container-expand-sm mt-3"></div>
+    <div class="card" style="width:70%;height:max-content !important;">
+      <img class="card-img-top" src="./hqdefault_97833.webp" alt="thumbnail" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">2. I find it more difficult to move on when...</h4>
+        <p class="card-text">Choose the best option which suits you:
+        </p>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+          <label class="form-check-label" for="check1">
+            Thoughts about my past truma resurface.
+          </label>
+          </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+          <label class="form-check-label" for="check1">
+            I've done something wrong or made a mistake.
+          </label>
+        </div></label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+          <label class="form-check-label" for="check1">
+            I don't get closure after something has ended.
+          </label>
+        </div></label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+          <label class="form-check-label" for="check1">
+            Someone I trusted hurts me, even unintentionaly.
+          </label>
+        </div></label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+          <label class="form-check-label" for="check1">
+            Someone talks bad about me behind my back.
+          </label>
+        </div></label>
+      </div>
+    </div>
   </div>
-  <div id="question9" class="container-fluid bg-dark text-dark" style="padding:100px 20px;">
-    <h1>Section 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <div id="question3" class="container-fluid bg-dark text-dark" style="padding:50px 10px;">
+    <div class="container-fluid container-expand-sm mt-3"></div>
+    <div class="card" style="width:70%;height:max-content !important;">
+      <img class="card-img-top" src="./hqdefault_133833.webp" alt="thumbnail" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">When I'm in a group project, I'm usually...</h4>
+        <p class="card-text">Choose the best option which suits you:
+        </p>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+          <label class="form-check-label" for="check1">
+The one most eager to strategize and plan, accounting for anything that could go wrong.
+          </label>
+          </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+          <label class="form-check-label" for="check1">
+            The one who just waits to be told what to do, too afraid to volunteer, beacuse they might do it wrong.
+          </label>
+        </div></label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+          <label class="form-check-label" for="check1">
+The one who asks
+          </label>
+        </div></label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+          <label class="form-check-label" for="check1">
+            Someone I trusted hurts me, even unintentionaly.
+          </label>
+        </div></label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+          <label class="form-check-label" for="check1">
+            Someone talks bad about me behind my back.
+          </label>
+        </div></label>
+      </div>
+    </div>
   </div>
-  <div id="question10" class="container-fluid bg-dark text-dark" style="padding:100px 20px;">
-    <h1>Section 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  </div>
+  </div>
+  </div>
   </div>
 </body>
+
 </html>
