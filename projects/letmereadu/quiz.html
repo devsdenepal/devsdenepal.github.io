@@ -2,8 +2,26 @@
 <html lang="en">
 
 <head>
-  <title>Quiz</title>
+  <title>What is your inner demon? | Quiz | Devs d`e Nepal | Dev. Gautam Kumar</title>
   <meta charset="utf-8">
+  <meta name="generator" content="Jekyll v3.9.2" />
+  <meta property="og:title" content="devsdenepal.github.io" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description"
+    content="Know you Inner Demon through this quiz, developed by Dev. Gautam Kumar. Disclaimer : This quiz is based on a video by psych2go allowing to recreate, redistribute, edit and modify the content in any source and any medium on the basis of CC(Creative Common) Licesnse. Our purpose is non-commecial and educational.">
+  <meta name="keywords" content="inner dome quiz,inner dome,dev gautam kumar, devsdenepal,github">
+  <link rel="canonical" href="https://devsdenepal.github.io/" />
+  <meta property="og:url" content="https://devsdenepal.github.io/" />
+  <meta property="og:site_name" content="devsdenepal.github.io" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="devsdenepal.github.io" />
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"An initiative for CSE and IT students   Learn coding, programming, hacking…","headline":"devsdenepal.github.io","name":"devsdenepal.github.io","url":"https://devsdenepal.github.io/"}</script>
+  <!-- End Jekyll SEO tag -->
+  <link rel="shortcut icon" type="image/ico"
+    href="https://github.com/devsdenepal/devsdenepal.github.io/raw/main/logo.png">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -25,11 +43,38 @@
       border: 1px solid #000;
       cursor: pointer;
     }
+
+    .navbar-brand {
+      color: #fff !important;
+    }
+
+    .nav-link {
+      color: #fff;
+    }
+
+    .nav-link.active {
+      color: #000 !important;
+    }
+
+    .card-title {
+      color: rgb(126 34 206/1);
+    }
+
+    .card-body {
+      font-size: 15px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .progress-guess {
+        display: none;
+      }
+
+    }
   </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".progress-guess" data-bs-offset="50">
-  <nav class="navbar navbar-expand-sm">
+  <nav class="navbar navbar-expand-sm" style="background-color: #6610f2 !important;">
 
     <div class="container-fluid">
       <!-- Links -->
@@ -77,7 +122,7 @@
           <a class="nav-link" href="#question9">Question 9</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#question10">Question 10</a>
+          <a class="nav-link" href="#demon_chart_container">Your Chart</a>
         </li>
       </ul>
     </div>
@@ -295,102 +340,182 @@
         </div>
       </div>
       <!-- Question 6 -->
-    <div  id="question6" class="container-fluid  text-dark" style="padding:50px 10px;">
-      <div class="container-fluid container-expand-sm mt-3"></div>
-      <div class="card" style="width:50%;height:max-content !important;">
-        <img class="card-img-top" src="./hqdefault_219233.webp" alt="thumbnail" style="width:100%">
-        <div class="card-body">
-          <h4 class="card-title">The most likely reason why someone might get mad at me is because...</h4>
-          <p class="card-text">Choose the best option which suits you:
-          </p>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" data="check1"  value="something"
-              onchange="marked('a')"   >
-            <label class="form-check-label" for="check1">
-             Dampen their moods by worrying too much and being too stressed out.
-            </label>
-            </label>
+      <div id="question6" class="container-fluid  text-dark" style="padding:50px 10px;">
+        <div class="container-fluid container-expand-sm mt-3"></div>
+        <div class="card" style="width:50%;height:max-content !important;">
+          <img class="card-img-top" src="./hqdefault_219233.webp" alt="thumbnail" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">The most likely reason why someone might get mad at me is because...</h4>
+            <p class="card-text">Choose the best option which suits you:
+            </p>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('a')">
+              <label class="form-check-label" for="check1">
+                Dampen their moods by worrying too much and being too stressed out.
+              </label>
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check2" value="something" onchange="marked('b')">
+              <label class="form-check-label" for="check2">
+                I mistakely think they're mad at me and read too much into each and everything they say and do
+              </label>
+            </div></label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check3" value="something" onchange="marked('c')">
+              <label class="form-check-label" for="check">
+                I put myself down a lot and say no to a lot of things, because I'm too afraid.
+              </label>
+            </div></label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check4" value="something" onchange="marked('d')">
+              <label class="form-check-label" for="check1">
+                I can't just let things go, and move on because I'd rather hold a grudge
+              </label>
+            </div></label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check5" value="something" onchange="marked('e')">
+              <label class="form-check-label" for="check1">
+                I feel that I'm putting myself first, and only looking out for my own self interest.
+              </label>
+            </div></label>
           </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" data="check2"  value="something"
-              onchange="marked('b')">
-            <label class="form-check-label" for="check2">
-              I mistakely think they're mad at me and read too much into each and everything they say and do 
-            </label>
-          </div></label>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" data="check3"  value="something"
-              onchange="marked('c')">
-            <label class="form-check-label" for="check">
-              I put myself down a lot and say no to a lot of things, because I'm too afraid.
-            </label>
-          </div></label>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" data="check4"  value="something"
-              onchange="marked('d')">
-            <label class="form-check-label" for="check1">
-              I can't just let things go, and move on because I'd rather hold a grudge
-            </label>
-          </div></label>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" data="check5"  value="something"
-              onchange="marked('e')">
-            <label class="form-check-label" for="check1">
-              I feel that I'm putting myself first, and only looking out for my own self interest.
-            </label>
-          </div></label>
+        </div>
+        <!-- Question 7 -->
+        <div id="question7" class="container-fluid  text-dark" style="padding:50px 10px;">
+          <div class="container-fluid container-expand-sm mt-3"></div>
+          <div class="card" style="width:50%;height:max-content !important;">
+            <img class="card-img-top" src="./image.png" alt="thumbnail" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">What is most important to you?</h4>
+              <p class="card-text">Choose the best option which suits you:
+              </p>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('a')">
+                <label class="form-check-label" for="check1">
+                  Having a strong sense of safety, stability and control over my life.
+                </label>
+                </label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" data="check2" value="something" onchange="marked('b')">
+                <label class="form-check-label" for="check2">
+                  Pleasing everyone and meeting their expectations.
+                </label>
+              </div></label>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" data="check3" value="something" onchange="marked('c')">
+                <label class="form-check-label" for="check">
+                  Succeeding everything I set in my mind to, and acheuving all my goals.
+                </label>
+              </div></label>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" data="check4" value="something" onchange="marked('d')">
+                <label class="form-check-label" for="check1">
+                  Being treated with trust, sensetivity and respect.
+                </label>
+              </div></label>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" data="check5" value="something" onchange="marked('e')">
+                <label class="form-check-label" for="check1">
+                  Being recognized for my value and earning the respect and admiration of others.
+                </label>
+              </div></label>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Question 7 -->
-    <div  id="question7" class="container-fluid  text-dark" style="padding:50px 10px;">
-      <div class="container-fluid container-expand-sm mt-3"></div>
-      <div class="card" style="width:50%;height:max-content !important;">
-        <img class="card-img-top" src="./hqdefault_268833.webp" alt="thumbnail" style="width:100%">
-        <div class="card-body">
-          <h4 class="card-title">What is most </h4>
-          <p class="card-text">Choose the best option which suits you:
-          </p>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" data="check1"  value="something"
-              onchange="marked('a')"   >
-            <label class="form-check-label" for="check1">
-              Be flexible and think on my feet, becuase I feel a lot better when I'm planned and prepared for
-              everything.
-            </label>
-            </label>
+      <!-- Question 8 -->
+      <div id="question8" class="container-fluid  text-dark" style="padding:50px 10px;">
+        <div class="container-fluid container-expand-sm mt-3"></div>
+        <div class="card" style="width:50%;height:max-content !important;">
+          <img class="card-img-top" src="./hqdefault_268833.webp" alt="thumbnail" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">What is your best quality?</h4>
+            <p class="card-text">Choose the best option which suits you:
+            </p>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('a')">
+              <label class="form-check-label" for="check1">
+                I'm a deep thinke who is prepared for everything.
+              </label>
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check2" value="something" onchange="marked('b')">
+              <label class="form-check-label" for="check2">
+                I'm very agreeable and always willing put others first.
+              </label>
+            </div></label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check3" value="something" onchange="marked('c')">
+              <label class="form-check-label" for="check">
+                I'm humble, hardworking and fiercly independent.
+              </label>
+            </div></label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check4" value="something" onchange="marked('d')">
+              <label class="form-check-label" for="check1">
+                I'm passionate and strong willed.
+              </label>
+            </div></label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check5" value="something" onchange="marked('e')">
+              <label class="form-check-label" for="check1">
+                I'm ambitious, determined and never afraid to speak my mind.
+              </label>
+            </div></label>
           </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" data="check2"  value="something"
-              onchange="marked('b')">
-            <label class="form-check-label" for="check2">
-              Assert myself and take command, because I don't wnat people thin I'm too bossy or question my abilities.
-            </label>
-          </div></label>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" data="check3"  value="something"
-              onchange="marked('c')">
-            <label class="form-check-label" for="check">
-              Trust my own choices, because I don't wanna make mistakes.
-            </label>
-          </div></label>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" data="check4"  value="something"
-              onchange="marked('d')">
-            <label class="form-check-label" for="check1">
-              Trust others, beacuse I feel frustated when other people make mistakes.
-            </label>
-          </div></label>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" data="check5"  value="something"
-              onchange="marked('e')">
-            <label class="form-check-label" for="check1">
-              Be okay with the opinion that contradicted mine, becuase I don't wanna feel wrong.
-            </label>
-          </div></label>
         </div>
       </div>
-    </div>
-    </div>
+      <!-- Question 9 -->
+      <div id="question9" class="container-fluid  text-dark" style="padding:50px 10px;">
+        <div class="container-fluid container-expand-sm mt-3"></div>
+        <div class="card" style="width:50%;height:max-content !important;">
+          <img class="card-img-top" src="./hqdefault_298266.webp" alt="thumbnail" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">I feel that my life would be better if I...</h4>
+            <p class="card-text">Choose the best option which suits you:
+            </p>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('a')">
+              <label class="form-check-label" for="check1">
+                Stop worrying about everything and enjoy life to the fullest.
+              </label>
+              </label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check2" value="something" onchange="marked('b')">
+              <label class="form-check-label" for="check2">
+                Could solve living in the past and second gusssing everything I do.
+              </label>
+            </div></label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check3" value="something" onchange="marked('c')">
+              <label class="form-check-label" for="check">
+                I had more confidence to go after what I really want in life.
+              </label>
+            </div></label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check4" value="something" onchange="marked('d')">
+              <label class="form-check-label" for="check1">
+                If I learn to trust and forgive people more easily.
+              </label>
+            </div></label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" data="check5" value="something" onchange="marked('e')">
+              <label class="form-check-label" for="check1">
+                If I could handle failure better and stop being so hard on myself
+              </label>
+            </div></label>
+
+          </div>
+
+        </div>
+
+      </div>
+      <button class="btn btn-primary" onclick="show_demon()" id="demon_submit">Show my demon</button>
+      <div class="container-fluid" id="demon_chart_container"></div>
     </div>
     </div>
     </div>
@@ -399,11 +524,30 @@
   </main>
   <script>
     let marks = {
-      a: 0, b: 0, c: 0, d: 0, e: 0
+      a: 0, b: 0, c: 0, d: 0, e: 0, answered: 0, total: 9
     }
     function marked(option) {
       marks[option] += 1;
+      marks.answered += 1;
       return marks;
+
+    }
+    function show_demon() {
+      if (marks.answered == 9) {
+        let anxiety = marks.a / marks.total * 100 + "%";
+        let guilt = marks.b / marks.total * 100 + "%";
+        let self_doubt = marks.c / marks.total * 100 + "%";
+        let anger = marks.d / marks.total * 100 + "%";
+        let pride = marks.e / marks.total * 100 + "%";
+        let demon = {
+          ANXIETY: anxiety, GUILT: guilt, SELF_DOUBT: self_doubt, ANGER: anger, PRIDE: pride
+        }
+        // display in console table
+        console.table(demon)
+        let chart_html = '<div class="container mt-3"><h2>Demon Quiz Chart</h2><p>Results may vary depending  on the person environment, we suggest you to give the quiz alone</p> <div class="progress"><div class="progress-bar bg-success" style="width:' + pride + '">Pride</div><div class="progress-bar bg-warning" style="width:' + anger + '">Angry</div><div class="progress-bar bg-danger" style="width:' + anxiety + '">Anxiety </div><div class="progress-bar bg-light" style="color:#000;width:' + self_doubt + '">Self-doubt</div><div class="progress-bar bg-dark" style="width:' + guilt + '">Guilt</div>';
+
+        document.querySelector("#demon_chart_container").innerHTML = chart_html
+      }
     }
   </script>
 </body>
