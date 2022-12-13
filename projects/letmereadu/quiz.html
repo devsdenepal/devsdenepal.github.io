@@ -527,16 +527,23 @@
     </div>
   </main>
   <script>
+    let current_screen = 1;
     let marks = {
       a: 0, b: 0, c: 0, d: 0, e: 0, answered: 0, total: 9
     }
     function marked(option) {
+      current_screen+=1
+      scroll_s(current_screen)
       marks[option] += 1;
       marks.answered += 1;
       return marks;
 
     }
+    function scroll_s(screen){
+      window.location.href="#question"+screen;
+    }
     function show_demon() {
+      window.location.href="#demon_chart_container"
       if (marks.answered == 9) {
         let anxiety = marks.a / marks.total * 100 + "%";
         let guilt = marks.b / marks.total * 100 + "%";
