@@ -532,7 +532,11 @@
       a: 0, b: 0, c: 0, d: 0, e: 0, answered: 0, total: 9
     }
     function marked(option) {
-      current_screen+=1
+      if(current_screen!==10){
+        current_screen+=1;
+      }else{
+        window.location.href="#demon_chart_container";
+      }
       scroll_s(current_screen)
       marks[option] += 1;
       marks.answered += 1;
