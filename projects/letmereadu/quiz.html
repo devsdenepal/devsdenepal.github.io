@@ -7,9 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <style>
     body {
       position: relative;
+    }
+
+    img {
+      width: 360px;
+      height: 240px;
+    }
+
+    .card {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      border: 1px solid #000;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -68,132 +82,330 @@
       </ul>
     </div>
   </div>
-
-<!-- QUESTION 1 -->
-  <div id="question1" class="container-fluid bg-dark text-dark" style="padding:50px 10px;">
-    <div class="container-fluid container-expand-sm mt-3"></div>
-    <div class="card" style="width:70%;height:max-content !important;">
-      <img class="card-img-top" src="./hqdefault_61866.webp" alt="thumbnail" style="width:100%">
-      <div class="card-body">
-        <h4 class="card-title">1.What professional flaw has held you back the most?</h4>
-        <p class="card-text">Choose the best option which suits you:
-        </p>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
-          <label class="form-check-label" for="check1">My constant sense of fear, which keeps me from enjoying life to
-            the fullest.</label>
-          </label>
+  <main class="bg-white">
+    <!-- QUESTION 1 -->
+    <div id="question1" class="container-fluid  text-dark" style="padding:50px 10px;">
+      <div class="container-fluid container-expand-sm mt-3"></div>
+      <div class="card" style="width:50%;height:max-content !important;" draggable="true">
+        <img class="card-img-top" src="./hqdefault_61866.webp" alt="thumbnail" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">1.What professional flaw has held you back the most?</h4>
+          <p class="card-text">Choose the best option which suits you:
+          </p>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('a')">
+            <label class="form-check-label" for="check1">My constant sense of fear, which keeps me from enjoying life to
+              the fullest.</label>
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check22" name="option2" value="something"
+              onchange="marked('b')">
+            <label class="form-check-label" for="check2">My hyper fixation on the past, which keeps me from being
+              present
+              in the moment.</label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check33" name="option13" value="something"
+              onchange="marked('c')">
+            <label class="form-check-label" for="check33"> My lack of confidence in myself and my abilities, which has
+              made me miss out on a lot of great opportunities.</label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('d')">
+            <label class="form-check-label" for="check1"> My perfectionism, and need to overachieve, which keeps me from
+              being happy</label>
+          </div></label>
         </div>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
-          <label class="form-check-label" for="check1">My hyper fixation on the past, which keeps me from being present
-            in the moment.</label>
-        </div></label>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
-          <label class="form-check-label" for="check1"> My lack of confidence in myself and my abilities, which has made me miss out on a lot of great opportunities.</label>
-        </div></label>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
-          <label class="form-check-label" for="check1"> My perfectionism, and need to overachieve, which keeps me from being happy</label>
-        </div></label>
       </div>
     </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  <div id="question2" class="container-fluid bg-dark text-dark" style="padding:50px 10px;">
-    <div class="container-fluid container-expand-sm mt-3"></div>
-    <div class="card" style="width:70%;height:max-content !important;">
-      <img class="card-img-top" src="./hqdefault_97833.webp" alt="thumbnail" style="width:100%">
-      <div class="card-body">
-        <h4 class="card-title">2. I find it more difficult to move on when...</h4>
-        <p class="card-text">Choose the best option which suits you:
-        </p>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
-          <label class="form-check-label" for="check1">
-            Thoughts about my past truma resurface.
-          </label>
-          </label>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="question2" class="container-fluid  text-dark" style="padding:50px 10px;">
+      <div class="container-fluid container-expand-sm mt-3"></div>
+      <div class="card" style="width:50%;height:max-content !important;">
+        <img class="card-img-top" src="./hqdefault_97833.webp" alt="thumbnail" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">2. I find it more difficult to move on when...</h4>
+          <p class="card-text">Choose the best option which suits you:
+          </p>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('a')">
+            <label class="form-check-label" for="check1">
+              Thoughts about my past truma resurface.
+            </label>
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('b')">
+            <label class="form-check-label" for="check1">
+              I've done something wrong or made a mistake.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('c')">
+            <label class="form-check-label" for="check1">
+              I don't get closure after something has ended.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('d')">
+            <label class="form-check-label" for="check1">
+              Someone I trusted hurts me, even unintentionaly.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('e')">
+            <label class="form-check-label" for="check1">
+              Someone talks bad about me behind my back.
+            </label>
+          </div></label>
         </div>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
-          <label class="form-check-label" for="check1">
-            I've done something wrong or made a mistake.
-          </label>
-        </div></label>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
-          <label class="form-check-label" for="check1">
-            I don't get closure after something has ended.
-          </label>
-        </div></label>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
-          <label class="form-check-label" for="check1">
-            Someone I trusted hurts me, even unintentionaly.
-          </label>
-        </div></label>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
-          <label class="form-check-label" for="check1">
-            Someone talks bad about me behind my back.
-          </label>
-        </div></label>
       </div>
     </div>
-  </div>
-  <div id="question3" class="container-fluid bg-dark text-dark" style="padding:50px 10px;">
-    <div class="container-fluid container-expand-sm mt-3"></div>
-    <div class="card" style="width:70%;height:max-content !important;">
-      <img class="card-img-top" src="./hqdefault_133833.webp" alt="thumbnail" style="width:100%">
-      <div class="card-body">
-        <h4 class="card-title">When I'm in a group project, I'm usually...</h4>
-        <p class="card-text">Choose the best option which suits you:
-        </p>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
-          <label class="form-check-label" for="check1">
-The one most eager to strategize and plan, accounting for anything that could go wrong.
-          </label>
-          </label>
+    <div id="question3" class="container-fluid  text-dark" style="padding:50px 10px;">
+      <div class="container-fluid container-expand-sm mt-3"></div>
+      <div class="card" style="width:50%;height:max-content !important;">
+        <img class="card-img-top" src="./hqdefault_133833.webp" alt="thumbnail" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">When I'm in a group project, I'm usually...</h4>
+          <p class="card-text">Choose the best option which suits you:
+          </p>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('a')">
+            <label class="form-check-label" for="check1">
+              The one most eager to strategize and plan, accounting for anything that could go wrong.
+            </label>
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('b')">
+            <label class="form-check-label" for="check1">
+              The one who just waits to be told what to do, too afraid to volunteer, beacuse they might do it wrong.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('c')">
+            <label class="form-check-label" for="check1">
+              The one who asks
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('d')">
+            <label class="form-check-label" for="check1">
+              Someone I trusted hurts me, even unintentionaly.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('e')">
+            <label class="form-check-label" for="check1">
+              Someone talks bad about me behind my back.
+            </label>
+          </div></label>
         </div>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
-          <label class="form-check-label" for="check1">
-            The one who just waits to be told what to do, too afraid to volunteer, beacuse they might do it wrong.
-          </label>
-        </div></label>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
-          <label class="form-check-label" for="check1">
-The one who asks
-          </label>
-        </div></label>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
-          <label class="form-check-label" for="check1">
-            Someone I trusted hurts me, even unintentionaly.
-          </label>
-        </div></label>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
-          <label class="form-check-label" for="check1">
-            Someone talks bad about me behind my back.
-          </label>
-        </div></label>
       </div>
     </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
+    <!-- Question 4 -->
+    <div id="question4" class="container-fluid  text-dark" style="padding:50px 10px;">
+      <div class="container-fluid container-expand-sm mt-3"></div>
+      <div class="card" style="width:50%;height:max-content !important;">
+        <img class="card-img-top" src="./hqdefault_149866.webp" alt="thumbnail" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">When I'm in charge. I struggle to...</h4>
+          <p class="card-text">Choose the best option which suits you:
+          </p>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('a')">
+            <label class="form-check-label" for="check1">
+              Be flexible and think on my feet, becuase I feel a lot better when I'm planned and prepared for
+              everything.
+            </label>
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check2" value="something" onchange="marked('b')">
+            <label class="form-check-label" for="check2">
+              Assert myself and take command, because I don't wnat people thin I'm too bossy or question my abilities.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check3" value="something" onchange="marked('c')">
+            <label class="form-check-label" for="check">
+              Trust my own choices, because I don't wanna make mistakes.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check4" value="something" onchange="marked('d')">
+            <label class="form-check-label" for="check1">
+              Trust others, beacuse I feel frustated when other people make mistakes.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check5" value="something" onchange="marked('e')">
+            <label class="form-check-label" for="check1">
+              Be okay with the opinion that contradicted mine, becuase I don't wanna feel wrong.
+            </label>
+          </div></label>
+        </div>
+      </div>
+    </div>
+    <!-- Question 5-->
+    <div id="question5" class="container-fluid  text-dark" style="padding:50px 10px;">
+      <div class="container-fluid container-expand-sm mt-3"></div>
+      <div class="card" style="width:50%;height:max-content !important;">
+        <img class="card-img-top" src="./hqdefault_177866.webp" alt="thumbnail" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">What are you most afraid of?</h4>
+          <p class="card-text">Choose the best option which suits you:
+          </p>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1" value="something" onchange="marked('a')">
+            <label class="form-check-label" for="check1">
+              Something will go wrong and I can't control or fix that.
+            </label>
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check2" value="something" onchange="marked('b')">
+            <label class="form-check-label" for="check2">
+              I'll endup with lot of regrets in my life.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check3" value="something" onchange="marked('c')">
+            <label class="form-check-label" for="check">
+              That even I put out myself out there and try my best, I'll fail and just endup humilated.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check4" value="something" onchange="marked('d')">
+            <label class="form-check-label" for="check1">
+              Being hurt by the people I care about the most, finding out they never felt the same way.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check5" value="something" onchange="marked('e')">
+            <label class="form-check-label" for="check1">
+              I'll never amount on anything and lost everyone admiration and respect.
+            </label>
+          </div></label>
+        </div>
+      </div>
+      <!-- Question 6 -->
+    <div  id="question6" class="container-fluid  text-dark" style="padding:50px 10px;">
+      <div class="container-fluid container-expand-sm mt-3"></div>
+      <div class="card" style="width:50%;height:max-content !important;">
+        <img class="card-img-top" src="./hqdefault_219233.webp" alt="thumbnail" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">The most likely reason why someone might get mad at me is because...</h4>
+          <p class="card-text">Choose the best option which suits you:
+          </p>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1"  value="something"
+              onchange="marked('a')"   >
+            <label class="form-check-label" for="check1">
+             Dampen their moods by worrying too much and being too stressed out.
+            </label>
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check2"  value="something"
+              onchange="marked('b')">
+            <label class="form-check-label" for="check2">
+              I mistakely think they're mad at me and read too much into each and everything they say and do 
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check3"  value="something"
+              onchange="marked('c')">
+            <label class="form-check-label" for="check">
+              I put myself down a lot and say no to a lot of things, because I'm too afraid.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check4"  value="something"
+              onchange="marked('d')">
+            <label class="form-check-label" for="check1">
+              I can't just let things go, and move on because I'd rather hold a grudge
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check5"  value="something"
+              onchange="marked('e')">
+            <label class="form-check-label" for="check1">
+              I feel that I'm putting myself first, and only looking out for my own self interest.
+            </label>
+          </div></label>
+        </div>
+      </div>
+      <!-- Question 7 -->
+    <div  id="question7" class="container-fluid  text-dark" style="padding:50px 10px;">
+      <div class="container-fluid container-expand-sm mt-3"></div>
+      <div class="card" style="width:50%;height:max-content !important;">
+        <img class="card-img-top" src="./hqdefault_268833.webp" alt="thumbnail" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">What is most </h4>
+          <p class="card-text">Choose the best option which suits you:
+          </p>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check1"  value="something"
+              onchange="marked('a')"   >
+            <label class="form-check-label" for="check1">
+              Be flexible and think on my feet, becuase I feel a lot better when I'm planned and prepared for
+              everything.
+            </label>
+            </label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check2"  value="something"
+              onchange="marked('b')">
+            <label class="form-check-label" for="check2">
+              Assert myself and take command, because I don't wnat people thin I'm too bossy or question my abilities.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check3"  value="something"
+              onchange="marked('c')">
+            <label class="form-check-label" for="check">
+              Trust my own choices, because I don't wanna make mistakes.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check4"  value="something"
+              onchange="marked('d')">
+            <label class="form-check-label" for="check1">
+              Trust others, beacuse I feel frustated when other people make mistakes.
+            </label>
+          </div></label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" data="check5"  value="something"
+              onchange="marked('e')">
+            <label class="form-check-label" for="check1">
+              Be okay with the opinion that contradicted mine, becuase I don't wanna feel wrong.
+            </label>
+          </div></label>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </main>
+  <script>
+    let marks = {
+      a: 0, b: 0, c: 0, d: 0, e: 0
+    }
+    function marked(option) {
+      marks[option] += 1;
+      return marks;
+    }
+  </script>
 </body>
 
 </html>
