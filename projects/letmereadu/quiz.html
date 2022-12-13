@@ -16,8 +16,9 @@
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
   <meta property="twitter:title" content="devsdenepal.github.io" />
-  <meta property="og:image" itemprop="image" content="https://devsdenepal.github.io/projects/letmereadu/hqdefault_61866.webp">
-<!-- attachments -->
+  <meta property="og:image" itemprop="image"
+    content="https://devsdenepal.github.io/projects/letmereadu/hqdefault_61866.webp">
+  <!-- attachments -->
   <link rel="canonical" href="https://devsdenepal.github.io/" />
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","description":"An initiative for CSE and IT students   Learn coding, programming, hacking…","headline":"devsdenepal.github.io","name":"devsdenepal.github.io","url":"https://devsdenepal.github.io/"}</script>
@@ -545,11 +546,14 @@
         let demon = {
           ANXIETY: anxiety, GUILT: guilt, SELF_DOUBT: self_doubt, ANGER: anger, PRIDE: pride
         }
+
         // display in console table
         console.table(demon)
         let chart_html = '<div class="container mt-3"><h2>Demon Quiz Chart</h2><p>Results may vary depending  on the person environment, we suggest you to give the quiz alone</p> <div class="progress"><div class="progress-bar bg-success" style="width:' + pride + '">Pride</div><div class="progress-bar bg-warning" style="width:' + anger + '">Angry</div><div class="progress-bar bg-danger" style="width:' + anxiety + '">Anxiety </div><div class="progress-bar bg-light" style="color:#000;width:' + self_doubt + '">Self-doubt</div><div class="progress-bar bg-dark" style="width:' + guilt + '">Guilt</div>';
 
         document.querySelector("#demon_chart_container").innerHTML = chart_html
+      } else {
+        alert("Invalid input(s) detected, try refreshing the page")
       }
     }
   </script>
