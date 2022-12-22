@@ -356,7 +356,7 @@
     }
 
     // Set the date we're counting down to
-    var endDate = new Date("Dec, 22, 2022, 18:58:00").getTime();
+    var endDate = new Date("Dec, 22, 2022, 23:59:59").getTime();
     // Update the count down every 1 second
     var now = new Date().getTime();
     console.log(now, endDate)
@@ -387,7 +387,7 @@
             document.getElementById("minsNum").innerHTML = ("0");
             document.getElementById("secsNum").innerHTML = ("0");
             document.getElementById("text").innerHTML = "Happy Birthday Dear " + wish_to + "!!</br> -from " + wish_from;
-            const quote_suggested = quotes[Math.floor(Math.random(0, 10) * 10)];
+            const quote_suggested = quotes[Math.floor(Math.random() * 4)];
             text.innerHTML += "</br>" + quote_suggested;
         }
     }, 1000);
