@@ -346,6 +346,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const wish_to = urlParams.get('to').toLocaleUpperCase();
     const wish_from = urlParams.get('from').toLocaleUpperCase();
+    const date_u = urlParams.get('on');
     let the_title = "Happy birtday " + "dear " + wish_to + "!! With love from " + wish_from;
     let the_message = "UNTIL " + wish_to + "'s BIRTHDAY </br> - From " + wish_from;
     let text = document.getElementById("text");
@@ -356,7 +357,7 @@
     }
 
     // Set the date we're counting down to
-    var endDate = new Date("Dec, 22, 2022, 23:59:59").getTime();
+    var endDate = new Date(date_u).getTime();
     // Update the count down every 1 second
     var now = new Date().getTime();
     console.log(now, endDate)
