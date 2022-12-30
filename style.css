@@ -4,6 +4,7 @@
     border: 0 solid;
     color: rgb(235, 219, 178);
     background: rgb(40, 40, 40) !important;
+    overflow: scroll;
 }
 html {
     background: rgb(40, 40, 40);
