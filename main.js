@@ -1,8 +1,17 @@
-function openNav() {
-    document.getElementById("navbar-side").style.width = "250px";
+
+var message = "Devs d'e Nepal is an independent private/non-commercial reasearch platform related to cyber and cyber-security.";
+
+let wpmil = 50; 
+let i=0;
+typeWriter();
+function typeWriter() {
+  if (i < message.length) {
+    document.getElementById("message").innerHTML += message.charAt(i);
+    i++;
+    setTimeout(typeWriter, wpmil);
   }
-  
-  function closeNav() {
-    document.getElementById("navbar-side").style.width = "0";
+  else{
+    document.getElementById("post-message").style.display = "block";
+    document.getElementById("audio").innerHTML="";
   }
-//   setInterval("history.go(0),2500")
+}
