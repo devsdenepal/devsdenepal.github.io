@@ -1,3 +1,4 @@
+import React from 'react';
 import { Col, Row, Container } from 'react-bootstrap';
 import TitleBox from '../components/TitleBox';
 import HeroImage from '/assets/img.png';

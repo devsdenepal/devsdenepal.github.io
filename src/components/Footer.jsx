@@ -1,6 +1,7 @@
 import logo from '/assets/logo.png';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import React from "react";
 
 const Footer = () => {
     const navLinks = [
