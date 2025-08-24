@@ -1,34 +1,25 @@
 import React from 'react';
-import {Row, Col} from 'react-bootstrap'
-import HeroImage from '/assets/img.png'
+import { Row, Col, Container } from 'react-bootstrap'
+import TitleBox from '../components/TitleBox';
+import Aos from 'aos';
+import Workexperience from '../components/Workxperience';
+import data from '/data/data.json'
 const AboutPage = () => {
     return (
-        <section role="individual">
-            <Row className="align-items-center">
-                <Col
-                    lg={6}
-                    className="d-flex flex-column justify-content-center align-items-start"
-                    data-aos="fade-right">
-                    <h3>
-                        Hello 👋,<br />
-                        My name is <br />
-                        <span className='text-gradient'>Dev Gautam Kumar</span><br />
-                        I build things for the web.
-                    </h3>
-                </Col>
-                <Col
-                    lg={6}
-                    className="d-flex justify-content-center align-items-center"
-                    data-aos="fade-left">
-                    <img
-                        src={HeroImage}
-                        alt="Hero"
-                        className="img-fluid"
-                        style={{ maxHeight: '350px', objectFit: 'contain' }}
-                    />
-                </Col>
-            </Row>
-        </section>
+        <Container>
+       
+                <TitleBox heading="About Me" />
+                <p role='medium' className='mt-4' data-aos="fade-right">
+                    Hi, I'm Dev Gautam Kumar, also known as devsdenepal. I'm a passionate web developer in my early 20s, specializing in modern JavaScript frameworks and building scalable web applications. With a strong foundation in React, Node.js, and cloud technologies, I enjoy solving complex problems and delivering impactful digital experiences.
+                </p>
+
+           
+                <div className='mt-4'>
+                    <TitleBox heading="Work Experience" />
+                    <Workexperience data={data.workexperience} />
+                </div>
+                
+        </Container>
     );
 }
 export default AboutPage;

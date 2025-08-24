@@ -2,7 +2,7 @@ import React from "react";
 import data from '/data/data.json';
 const ProjectList = () => {
     return (
-        <div className="row mb-4"  data-aos="fade-up">
+        <div className="row mt-4 mb-4"  data-aos="fade-up">
             {data.projects.map((project, index) => (
                 <div className="col-md-4 gy-4" key={index}>
                     <div className="card h-100 d-flex flex-column" data-aos="fade-up">

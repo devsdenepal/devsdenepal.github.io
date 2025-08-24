@@ -53,5 +53,39 @@
             "description" : "A browser extension for logging and categorizing Medium articles. It allows users to save articles for later reading and organize them into categories.",
             "thumb": "/assets/pr3.png"
         }
+    ],
+    "workexperience": [
+        {
+            "position": "Frontend Web Developer",
+            "company": "Graphilla Technology",
+            "duration": "Aug 2025 - Present",
+            "responsibilities": [
+                "Developing and maintaining frontend features for web applications."
+            ]
+        },
+        {
+            "position": "Technical Lead",
+            "company": "NepTech Tribe",
+            "duration": "Jul 2024 - Present",
+            "responsibilities": [
+                "Mentoring and organizing cybersecurity awareness sessions."
+            ]
+        },
+        {
+            "position": "DevOps Intern",
+            "company": "Code to Earn (c2e)",
+            "duration": "Jun 2024 - Sep 2024",
+            "responsibilities": [
+                "Worked on DevOps, creative problem solving, and research skills."
+            ]
+        },
+        {
+            "position": "Content Developer",
+            "company": "Technology Media",
+            "duration": "May 2023 - Apr 2024",
+            "responsibilities": [
+                "Worked remotely on content development."
+            ]
+        }
     ]
 }

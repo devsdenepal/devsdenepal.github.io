@@ -364,9 +364,6 @@ li {
   border: 1px solid rgba(19, 176, 245, 0.5);
 }
 
-.titleBoxContainer {
-  text-align: center;
-}
 .titleBoxContainer-title {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
@@ -391,6 +388,32 @@ li {
     font-size: 44px;
   }
 }
+.jobContainer {
+  width: 60%;
+  margin: 2rem 0;
+  border-bottom: 1px solid #666666;
+}
+
+.scrollToTop {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+  z-index: 999;
+}
+.scrollToTop svg {
+  width: 22px;
+  height: 22px;
+  fill: #13B0F5;
+}
+
 .text-gradient {
   background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
   -webkit-background-clip: text;

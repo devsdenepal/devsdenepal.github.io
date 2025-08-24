@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { RiMenuFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
-
+import { Offcanvas } from 'react-bootstrap';
 function NavBar() {
   const [sticky, setSticky] = useState(false);
   const [show, setShow] = useState(false);
@@ -79,6 +79,26 @@ function NavBar() {
             </div>
         {/* </Container> */}
       </nav>
+            <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+         <ul className="navbar-menu-list">
+              {NavList.map((item, index) => (
+                <li key={index} onClick={handleClose} >
+                  <NavLink
+                    to={item.slug}
+                    className={({ isActive }) =>
+                      isActive ? "navbar-menu-list-item active" : "navbar-menu-list-item"
+                    }
+                  >
+                  <span>  {item.name} </span>
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+        </Offcanvas.Body>
+      </Offcanvas>
     </>
   );
 }
