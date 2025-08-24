@@ -3,7 +3,6 @@ import { Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { RiMenuFill } from "react-icons/ri";
-import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from 'react-router-dom';
 
 function NavBar() {
