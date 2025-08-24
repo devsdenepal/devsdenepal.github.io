@@ -1,0 +1,34 @@
+$xs: 480px;
+$sm: 576px;
+$md: 767.98px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1440px;
+
+@mixin responsive-for($size) {
+  @if $size == xs {
+    @media all and (max-width: $xs) {
+      @content;
+    }
+  } @else if $size == sm {
+    @media all and (max-width: $sm) {
+      @content;
+    }
+  } @else if $size == md {
+    @media all and (max-width: $md) {
+      @content;
+    }
+  } @else if $size == lg {
+    @media all and (max-width: $lg) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media all and (max-width: $xl) {
+      @content;
+    }
+  } @else if $size == xxl {
+    @media all and (max-width: $xxl) {
+      @content;
+    }
+  }
+}

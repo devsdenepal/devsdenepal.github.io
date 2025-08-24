@@ -1,0 +1,82 @@
+h1 {
+  font-size: $font-title-xl;
+  color: color(primary, base);
+  font-weight: $font-bold;
+  @include responsive-for(lg) {
+    font-size: $font-title-lg;
+  }
+  @include responsive-for(sm) {
+    font-size: $font-title-md;
+  }
+}
+h2 {
+  font-size: $font-title-lg;
+  color: color(text-heading);
+  font-weight: $font-bold;
+  @include responsive-for(lg) {
+    font-size: $font-title-md;
+  }
+  @include responsive-for(sm) {
+    font-size: $font-title-sm;
+  }
+}
+
+h3 {
+  font-size: $font-title-md;
+  color: color(text-heading);
+  font-weight: $font-bold;
+  @include responsive-for(lg) {
+    font-size: $font-title-sm;
+  }
+  @include responsive-for(sm) {
+    font-size: $font-title-xs;
+  }
+}
+
+h4 {
+  font-size: $font-title-sm;
+  color: color(text-heading);
+  font-weight: $font-bold;
+  @include responsive-for(lg) {
+    font-size: $font-title-xs;
+  }
+  @include responsive-for(sm) {
+    font-size: $font-text-lg;
+  }
+}
+
+h5 {
+  font-size: $font-title-xs;
+  color: color(text-heading);
+  font-weight: $font-bold;
+
+  @include responsive-for(lg) {
+    font-size: $font-text-lg;
+  }
+}
+
+p[role="large"] {
+  font-size: $font-text-lg;
+  color: color(text-paragraph);
+}
+p {
+  font-size: $font-text-md;
+  color: color(text-paragraph);
+}
+p[role="small"] {
+  font-size: $font-text-sm;
+  color: color(text-paragraph);
+}
+
+section[role="component"] {
+    margin-top: 5rem;
+    padding: 1.5rem 0rem;
+    @include responsive-for(lg){
+        margin-top: 3rem;
+        padding: 1.25rem 0rem;
+    }
+    @include responsive-for(sm){
+        margin-top: 1.5rem;
+        padding: 1rem 0rem;
+    }
+}

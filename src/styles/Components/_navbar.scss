@@ -1,0 +1,134 @@
+.navbarWrapper {
+    z-index: 100;
+    width: 100%;
+
+    &.sticky {
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: color(white);
+        box-shadow: 1px 2px 16px #5b5b5b3b;
+        position: fixed;
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.875rem 2rem;
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+
+        &-menu {
+            display: none;
+            border: 1.5px solid transparent;
+            padding: 0.5rem;
+            border-radius: 2.5rem;
+
+            &:hover {
+                & svg {
+                    color: color(black);
+                }
+            }
+
+            svg {
+                height: 2rem;
+                width: 2rem;
+                color: color(primary, base);
+                cursor: pointer;
+            }
+
+            @include responsive-for(md) {
+                display: block;
+            }
+        }
+
+        &-logo {
+            display: flex;
+            width: 7rem;
+            height: 100%;
+
+            @include responsive-for(sm) {
+                width: 5rem;
+            }
+
+            @include responsive-for(xs) {
+                width: 5rem;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            padding: 0rem;
+            list-style: none;
+            gap: 2rem;
+            margin: 2rem;
+
+            //  @include responsive-for(xlg) {
+            //   gap: 1rem;
+            // }
+            @include responsive-for(md) {
+                display: none;
+            }
+
+            &-item {
+                color: color(black);
+                text-decoration: none;
+                font-size: $text-regular;
+                font-family: "Poppins", sans-serif;
+                letter-spacing: 0.02rem;
+                font-weight: $font-medium;
+
+                &.active {
+                    background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.navbar-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style: none;
+    gap: 2rem;
+    margin: 0rem;
+
+    &-item {
+        color: color(black);
+        text-decoration: none;
+        font-size: $text-medium;
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 0.02rem;
+        font-weight: $font-medium;
+
+        &.active {
+            color: color(primary, base);
+            padding-bottom: 0.125rem;
+            border-bottom: 2px solid color(primary, base);
+        }
+    }
+}
+
+.offcanvas {
+    width: 13rem !important;
+}

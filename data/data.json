@@ -1,0 +1,57 @@
+{
+    "techStack": [
+       {
+        "name": "bootstrap",
+        "image": "/assets/bootstrap.svg"
+       },
+       {
+        "name": "javascript",
+        "image": "/assets/js.svg"
+       },
+       {
+        "name": "css",
+        "image": "/assets/css.svg"
+       },
+       {
+        "name": "html",
+        "image": "/assets/html.svg"
+       },
+       {
+        "name": "react",
+        "image": "/assets/react.svg"
+       },
+       {
+        "name": "git",
+        "image": "/assets/git.svg"
+       },
+       {
+        "name": "github",
+        "image": "/assets/github.svg"
+       },
+       {
+        "name": "vscode",
+        "image": "/assets/vscode.svg"
+       },
+       {
+        "name" : "vite",
+        "image": "/assets/vite.svg"
+       }
+    ],
+    "projects" :[
+        {
+            "name" : "CourseKrimson: Open Courses",
+            "description" : "CourseKrimson is a beginner-friendly open-source web resource built with React and JavaScript, encouraging contributions and collaboration. Hosted on GitHub Pages under MIT license, it supports learning and open-source community engagement, especially for new developers.",
+            "thumb": "/assets/pr1.png"
+        },
+        {
+            "name" : "Github Profile Analyzer based on Github API",
+            "description" : "A web application that analyzes GitHub profiles using the GitHub API, providing insights into repositories, contributions, and more. The application offers a user-friendly interface for exploring GitHub data.",
+            "thumb": "/assets/pr2.png"
+        },
+        {
+            "name" : "Medium Reads Logger Extension",
+            "description" : "A browser extension for logging and categorizing Medium articles. It allows users to save articles for later reading and organize them into categories.",
+            "thumb": "/assets/pr3.png"
+        }
+    ]
+}

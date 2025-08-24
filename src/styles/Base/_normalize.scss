@@ -1,0 +1,123 @@
+
+section[role="individual"] {
+  margin-top: 5rem;
+  padding: 1.5rem 0rem;
+  min-height: 80vh; 
+  @include responsive-for(lg) { 
+    margin-top: 4rem;
+    padding: 1rem 0rem;
+  }
+  @include responsive-for(sm) {
+    margin-top: 2rem;
+    padding: 0.75rem 0rem;
+  }
+}
+
+p[role="large"] {
+  font-size: $text-large;
+  font-family: "Poppins", sans-serif;
+  color: color(black);
+   @include responsive-for(lg) {
+    font-size: $text-medium;
+  }
+  @include responsive-for(sm) {
+    font-size: $text-regular;
+  }
+}
+p[role="normal"] {
+  font-size: $text-medium;
+  font-family: "Poppins", sans-serif;
+  line-height: 155%; /* 1.55rem */
+  letter-spacing: 0.02rem;
+  @include responsive-for(sm) {
+    font-size: $text-small;
+  }
+}
+p {
+  font-family: "Poppins", sans-serif;
+  color:color(black);
+   font-size: $text-regular;
+   margin: 0;
+    @include responsive-for(sm) {
+    font-size: $text-small;
+  }
+}
+
+section[role="main"] {
+  padding: 6rem 0rem;
+}
+
+h1 {
+  font-size: $heading;
+  color: color(text-heading);
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+  @include responsive-for(lg) {
+    font-size: $title;
+  }
+  @include responsive-for(sm) {
+    font-size: $subtitle;
+  }
+}
+h2 {
+  font-size: $title;
+  color: color(text-heading);
+  font-weight: 600;
+  letter-spacing: 0.06rem;
+  @include responsive-for(lg) {
+    font-size: $subtitle;
+  }
+  @include responsive-for(sm) {
+    font-size: $small-subhead;
+  }
+}
+h3 {
+  font-size: $subtitle;
+  color: color(text-heading);
+  font-weight: 600;
+  @include responsive-for(lg) {
+    font-size: $small-subhead;
+  }
+  @include responsive-for(sm) {
+    font-size: $text-extraLarge;
+  }
+}
+
+p[role="large"] {
+  font-size: $text-large;
+  font-family: "Poppins", sans-serif;
+ color:color(text-paragraph);
+   @include responsive-for(lg) {
+    font-size: $text-medium;
+  }
+  @include responsive-for(sm) {
+    font-size: $text-regular;
+  }
+}
+p[role="medium"] {
+  font-size: $text-medium;
+  font-family: "Poppins", sans-serif;
+  line-height: 155%; /* 1.55rem */
+  letter-spacing: 0.02rem;
+   color:color(text-paragraph);
+  @include responsive-for(sm) {
+    font-size: $text-small;
+  }
+}
+p {
+  font-family: "Poppins", sans-serif;
+  color:color(text-paragraph);
+   font-size: $text-regular;
+    @include responsive-for(sm) {
+    font-size: $text-small;
+  }
+}
+
+h4 , h5 ,h6{
+  color: color(text-heading);
+  font-weight: 600;
+}
+
+li{
+  color: color(text-paragraph);
+} 

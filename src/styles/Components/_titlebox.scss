@@ -1,0 +1,34 @@
+.titleBoxContainer { 
+    text-align: center;
+
+    &-title {
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        font-weight: $font-semi-bold;
+    }
+
+    h2 {
+        margin: 0;
+        line-height: 1.1rem;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &-description {
+        color: color(text-paragraph);
+    }
+
+
+}
+
+@include responsive-for(lg) {
+    .titleBoxContainer {
+        width: 100%;
+
+        &-title {
+            font-size: $title;
+        }
+    }
+}

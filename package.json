@@ -1,0 +1,35 @@
+{
+  "name": "callmedev",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.7",
+    "mdb-react-ui-kit": "^9.0.0",
+    "react": "^19.1.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.6.3",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.2.0",
+    "vite": "^7.0.0"
+  }
+}
