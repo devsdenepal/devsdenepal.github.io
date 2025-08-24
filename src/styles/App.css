@@ -419,4 +419,24 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #A7A7A7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E70FAA;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #A500B5;
 }/*# sourceMappingURL=App.css.map */
