@@ -33,7 +33,7 @@ const Footer = () => {
         <Container>
             <Row className="pt-4 pb-2 align-items-center">
                 <Col md={4} className="d-flex flex-column">
-                    <span style={{ fontWeight: 'bold', fontSize: '2rem' }} className='text-gradient'>{'{404}'}</span>
+                    <span style={{ fontWeight: 'bold', fontSize: '2rem' }} className='text-gradient'>{'{403}'}</span>
                     <span style={{ fontWeight: 500, fontSize: '1rem' }} className='text-gradient'>devsdenepal</span>
                 </Col>
                 <Col md={4} className="text-md-center mt-3 mt-md-0">
